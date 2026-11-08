@@ -1,65 +1,558 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>My Simple Blog</title>
-  <style>
-    body {
-      font-family: Georgia, serif;
-      background-color: #fafafa;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-    }
-    .container {
-      max-width: 700px;
-      width: 100%;
-      padding: 2rem;
-      background: white;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-      margin: 2rem;
-      border-radius: 8px;
-    }
-    h1 {
-      text-align: center;
-      margin-bottom: 1rem;
-    }
-    p {
-      line-height: 1.6;
-      margin: 1rem 0;
-    }
-    .post {
-      margin-bottom: 2rem;
-      border-bottom: 1px solid #eee;
-      padding-bottom: 1.5rem;
-    }
-    .post:last-child {
-      border-bottom: none;
-    }
-    .date {
-      color: #777;
-      font-size: 0.9rem;
-      margin-bottom: 0.5rem;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<title>yorulmaz · dashboard</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>◈</text></svg>">
+<style>
+  :root {
+    --bg: #0b0e13;
+    --panel: #12161d;
+    --panel-2: #171c25;
+    --line: #232b38;
+    --text: #e8edf4;
+    --muted: #8b95a7;
+    --dim: #5f6b7f;
+    --gold: #e0b25c;
+    --up: #4ade80;
+    --down: #f87171;
+    --radius: 14px;
+  }
+
+  * { box-sizing: border-box; }
+
+  html { -webkit-text-size-adjust: 100%; }
+
+  body {
+    margin: 0;
+    padding: 0 clamp(1rem, 4vw, 3rem) 3rem;
+    background: var(--bg);
+    color: var(--text);
+    font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0 0 auto 0;
+    height: 320px;
+    background: radial-gradient(70% 100% at 50% 0%, rgba(224, 178, 92, .10), transparent 70%);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .wrap { max-width: 1180px; margin: 0 auto; position: relative; z-index: 1; }
+
+  /* ---------- header ---------- */
+
+  header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: 2.4rem 0 1.6rem;
+  }
+
+  .brand {
+    font-size: 1.05rem;
+    font-weight: 600;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+    color: var(--text);
+    margin: 0;
+  }
+
+  .brand span { color: var(--gold); }
+
+  .clock {
+    display: flex;
+    align-items: baseline;
+    gap: .6rem;
+    color: var(--muted);
+    font-variant-numeric: tabular-nums;
+  }
+
+  .clock time {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: var(--text);
+    letter-spacing: .02em;
+  }
+
+  .clock .date { font-size: .85rem; }
+
+  /* ---------- tiles ---------- */
+
+  .tiles {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .tile {
+    background: linear-gradient(180deg, var(--panel-2), var(--panel));
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 1.25rem 1.35rem 1.1rem;
+    display: flex;
+    flex-direction: column;
+    min-height: 168px;
+  }
+
+  .tile-label {
+    font-size: .72rem;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--muted);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: .5rem;
+  }
+
+  .badge {
+    font-size: .64rem;
+    letter-spacing: .08em;
+    padding: .12rem .45rem;
+    border-radius: 999px;
+    border: 1px solid var(--line);
+    color: var(--dim);
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+
+  .badge.live { color: var(--up); border-color: rgba(74, 222, 128, .35); }
+  .badge.stale { color: var(--gold); border-color: rgba(224, 178, 92, .35); }
+
+  .value {
+    font-size: clamp(2rem, 5vw, 2.7rem);
+    font-weight: 300;
+    letter-spacing: -.02em;
+    margin: .45rem 0 .1rem;
+    font-variant-numeric: tabular-nums;
+    line-height: 1.1;
+  }
+
+  .value.gold { color: var(--gold); }
+
+  .sub {
+    color: var(--muted);
+    font-size: .82rem;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .4rem;
+    margin-top: auto;
+    padding-top: .9rem;
+  }
+
+  .chip {
+    font-size: .72rem;
+    padding: .2rem .5rem;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, .03);
+    border: 1px solid var(--line);
+    color: var(--muted);
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+  }
+
+  .chip b { color: var(--text); font-weight: 500; }
+  .chip .pos { color: var(--up); }
+  .chip .neg { color: var(--down); }
+
+  /* ---------- news ---------- */
+
+  .news {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(285px, 1fr));
+    gap: 1rem;
+  }
+
+  .card {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 1rem 1.05rem 1.15rem;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+  }
+
+  .card-head {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    padding-bottom: .6rem;
+    margin-bottom: .55rem;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .card-head h2 {
+    font-size: .82rem;
+    font-weight: 600;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    margin: 0;
+    color: var(--text);
+  }
+
+  .card-head .dot {
+    width: 5px; height: 5px; border-radius: 50%;
+    background: var(--gold); flex: none;
+  }
+
+  .card-head a {
+    margin-left: auto;
+    color: var(--dim);
+    font-size: .78rem;
+    text-decoration: none;
+    transition: color .15s;
+    white-space: nowrap;
+  }
+
+  .card-head a:hover { color: var(--gold); }
+
+  ul.items { list-style: none; margin: 0; padding: 0; display: grid; gap: .1rem; }
+
+  ul.items li { min-width: 0; }
+
+  ul.items a {
+    display: block;
+    padding: .42rem .5rem .42rem .55rem;
+    margin-left: -.5rem;
+    border-left: 2px solid transparent;
+    border-radius: 0 6px 6px 0;
+    color: #cdd6e2;
+    text-decoration: none;
+    font-size: .86rem;
+    line-height: 1.42;
+    transition: background .13s, border-color .13s, color .13s;
+  }
+
+  ul.items a:hover,
+  ul.items a:focus-visible {
+    background: rgba(255, 255, 255, .04);
+    border-left-color: var(--gold);
+    color: #fff;
+    outline: none;
+  }
+
+  ul.items .meta {
+    display: block;
+    color: var(--dim);
+    font-size: .7rem;
+    margin-top: .14rem;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .empty { color: var(--dim); font-size: .82rem; padding: .5rem 0; }
+
+  /* ---------- footer ---------- */
+
+  footer {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--line);
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+    color: var(--dim);
+    font-size: .76rem;
+  }
+
+  footer a { color: var(--muted); text-decoration: none; }
+  footer a:hover { color: var(--gold); }
+
+  .skeleton { color: var(--dim); }
+
+  @media (prefers-reduced-motion: reduce) {
+    * { transition: none !important; }
+  }
+</style>
 </head>
 <body>
-  <div class="container">
-    <h1>Yorulmaz</h1>
-    
-    <div class="post">
-      <div class="date">September 13, 2025</div>
-      <p>Welcome to my simple blog! This is a minimalist text-only site made for GitHub Pages. You can add more posts by copying and pasting the block structure below.</p>
-    </div>
+<div class="wrap">
 
-    <div class="post">
-      <div class="date">Earlier Post</div>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut risus at nulla sodales convallis. Curabitur non mauris nec augue efficitur imperdiet.</p>
+  <header>
+    <h1 class="brand">yorulmaz<span>.</span></h1>
+    <div class="clock">
+      <time id="clock" datetime="">--:--:--</time>
+      <span class="date" id="date"></span>
     </div>
+  </header>
 
-  </div>
+  <main>
+    <section class="tiles" aria-label="Koersen">
+
+      <article class="tile">
+        <div class="tile-label">
+          <span>Goud · per gram</span>
+          <span class="badge" id="gold-badge">laden</span>
+        </div>
+        <div class="value gold" id="gold-value">—</div>
+        <div class="sub" id="gold-sub">spot, 24k</div>
+        <div class="chips">
+          <span class="chip" id="gold-usd">—</span>
+          <span class="chip" id="gold-oz">—</span>
+          <span class="chip" id="gold-fx">—</span>
+        </div>
+      </article>
+
+      <article class="tile">
+        <div class="tile-label">
+          <span id="fund-label">Vanguard Global Stock Index</span>
+          <span class="badge" id="fund-badge">laden</span>
+        </div>
+        <div class="value" id="fund-value">—</div>
+        <div class="sub" id="fund-sub">Institutional Plus EUR Acc · IE00BFPM9N11</div>
+        <div class="chips" id="fund-chips"></div>
+      </article>
+
+    </section>
+
+    <section class="news" id="news" aria-label="Nieuws">
+      <p class="empty skeleton">Nieuws laden…</p>
+    </section>
+  </main>
+
+  <footer>
+    <span id="updated">—</span>
+    <span>koersen en koppen van de genoemde bronnen</span>
+  </footer>
+
+</div>
+
+<script>
+(() => {
+  "use strict";
+
+  const TROY_OUNCE_G = 31.1034768;
+  const eur = new Intl.NumberFormat("nl-NL", { style: "currency", currency: "EUR" });
+  const num2 = new Intl.NumberFormat("nl-NL", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+  const usd = new Intl.NumberFormat("en-US", { style: "currency", currency: "USD" });
+  const num4 = new Intl.NumberFormat("nl-NL", { minimumFractionDigits: 4, maximumFractionDigits: 4 });
+
+  const $ = (id) => document.getElementById(id);
+
+  /* ---------- clock ---------- */
+
+  const dateFmt = new Intl.DateTimeFormat("nl-NL", {
+    weekday: "short", day: "numeric", month: "short", year: "numeric",
+  });
+
+  function tick() {
+    const now = new Date();
+    const el = $("clock");
+    el.textContent = now.toLocaleTimeString("nl-NL", { hour12: false });
+    el.setAttribute("datetime", now.toISOString());
+    $("date").textContent = dateFmt.format(now);
+  }
+  tick();
+  setInterval(tick, 1000);
+
+  /* ---------- helpers ---------- */
+
+  function relative(iso) {
+    if (!iso) return "";
+    const t = new Date(iso);
+    if (isNaN(t)) return "";
+    const mins = Math.round((Date.now() - t.getTime()) / 60000);
+    if (mins < 1) return "net";
+    if (mins < 60) return mins + " min";
+    const hrs = Math.round(mins / 60);
+    if (hrs < 24) return hrs + " u";
+    const days = Math.round(hrs / 24);
+    if (days < 7) return days + " d";
+    return t.toLocaleDateString("nl-NL", { day: "numeric", month: "short" });
+  }
+
+  function signedClass(v) {
+    if (v === null || v === undefined || isNaN(v)) return "";
+    return v >= 0 ? "pos" : "neg";
+  }
+
+  function pct(v) {
+    if (v === null || v === undefined || isNaN(v)) return "—";
+    return (v > 0 ? "+" : "") + num2.format(v) + "%";
+  }
+
+  /* ---------- gold ---------- */
+
+  async function loadGold() {
+    const badge = $("gold-badge");
+    try {
+      const [spotRes, fxRes] = await Promise.all([
+        fetch("https://api.gold-api.com/price/XAU", { cache: "no-store" }),
+        fetch("https://open.er-api.com/v6/latest/USD", { cache: "no-store" }),
+      ]);
+      if (!spotRes.ok || !fxRes.ok) throw new Error("http");
+
+      const spot = await spotRes.json();
+      const fx = await fxRes.json();
+
+      const ozUsd = Number(spot.price);
+      const eurUsd = Number(fx.rates && fx.rates.EUR);
+      if (!ozUsd || !eurUsd) throw new Error("shape");
+
+      const gramUsd = ozUsd / TROY_OUNCE_G;
+      const gramEur = gramUsd * eurUsd;
+
+      $("gold-value").textContent = eur.format(gramEur);
+      $("gold-sub").textContent = "spot, 24k · " + relative(spot.updatedAt);
+      $("gold-usd").innerHTML = "USD/g <b>" + usd.format(gramUsd) + "</b>";
+      $("gold-oz").innerHTML = "USD/oz <b>" + usd.format(ozUsd) + "</b>";
+      $("gold-fx").innerHTML = "EUR/USD <b>" + num4.format(eurUsd) + "</b>";
+      badge.textContent = "live";
+      badge.className = "badge live";
+    } catch (err) {
+      badge.textContent = "n.v.t.";
+      badge.className = "badge stale";
+      $("gold-sub").textContent = "koersbron niet bereikbaar";
+    }
+  }
+
+  /* ---------- fund ---------- */
+
+  function loadFund(fund) {
+    if (!fund) return;
+    const badge = $("fund-badge");
+    const perf = fund.performance || {};
+
+    $("fund-label").textContent = fund.name || "Fonds";
+
+    if (fund.nav === null || fund.nav === undefined) {
+      badge.textContent = "geen data";
+      badge.className = "badge stale";
+      $("fund-sub").textContent = "koers nog niet opgehaald";
+      return;
+    }
+
+    $("fund-value").textContent = eur.format(fund.nav);
+    $("fund-sub").textContent =
+      (fund.share_class ? fund.share_class + " · " : "") +
+      (fund.isin || "") +
+      (fund.as_of ? " · " + new Date(fund.as_of).toLocaleDateString("nl-NL", { day: "numeric", month: "short" }) : "");
+
+    badge.textContent = fund.stale ? "verouderd" : "dagkoers";
+    badge.className = "badge" + (fund.stale ? " stale" : " live");
+
+    const chips = [];
+    if (fund.change_pct !== null && fund.change_pct !== undefined) {
+      chips.push('<span class="chip">dag <b class="' + signedClass(fund.change_pct) + '">' + pct(fund.change_pct) + "</b></span>");
+    }
+    const order = [["ytd", "YTD"], ["1m", "1 mnd"], ["1y", "1 jaar"]];
+    for (const [key, label] of order) {
+      if (typeof perf[key] === "number") {
+        chips.push('<span class="chip">' + label + ' <b class="' + signedClass(perf[key]) + '">' + pct(perf[key]) + "</b></span>");
+      }
+    }
+    if (typeof perf["3y"] === "number") {
+      chips.push('<span class="chip">3 jaar p/j <b class="' + signedClass(perf["3y"]) + '">' + pct(perf["3y"]) + "</b></span>");
+    }
+    $("fund-chips").innerHTML = chips.join("");
+  }
+
+  /* ---------- news ---------- */
+
+  function renderNews(news) {
+    const host = $("news");
+    host.innerHTML = "";
+
+    for (const entry of Object.values(news || {})) {
+      const card = document.createElement("article");
+      card.className = "card";
+
+      const head = document.createElement("div");
+      head.className = "card-head";
+      const dot = document.createElement("span");
+      dot.className = "dot";
+      const h2 = document.createElement("h2");
+      h2.textContent = entry.label || "";
+      head.append(dot, h2);
+
+      const siteLink = document.createElement("a");
+      siteLink.href = entry.site || "#";
+      siteLink.textContent = "site ↗";
+      siteLink.target = "_blank";
+      siteLink.rel = "noopener noreferrer";
+      head.append(siteLink);
+      card.append(head);
+
+      const items = entry.items || [];
+      if (!items.length) {
+        const p = document.createElement("p");
+        p.className = "empty";
+        p.textContent = "geen koppen opgehaald";
+        card.append(p);
+        host.append(card);
+        continue;
+      }
+
+      const ul = document.createElement("ul");
+      ul.className = "items";
+      for (const item of items) {
+        const li = document.createElement("li");
+        const a = document.createElement("a");
+        a.href = item.link;
+        a.target = "_blank";
+        a.rel = "noopener noreferrer";
+        a.textContent = item.title;
+
+        const rel = relative(item.published);
+        if (rel) {
+          const span = document.createElement("span");
+          span.className = "meta";
+          span.textContent = rel;
+          a.append(span);
+        }
+        li.append(a);
+        ul.append(li);
+      }
+      card.append(ul);
+      host.append(card);
+    }
+  }
+
+  /* ---------- boot ---------- */
+
+  async function main() {
+    try {
+      const res = await fetch("data.json", { cache: "no-store" });
+      if (!res.ok) throw new Error("data.json " + res.status);
+      const data = await res.json();
+
+      loadFund(data.fund);
+      renderNews(data.news);
+
+      const stamp = data.generated_at ? new Date(data.generated_at) : null;
+      $("updated").textContent = stamp
+        ? "data bijgewerkt " + stamp.toLocaleString("nl-NL", { day: "numeric", month: "short", hour: "2-digit", minute: "2-digit" })
+        : "—";
+    } catch (err) {
+      $("news").innerHTML = '<p class="empty">Kon data.json niet laden.</p>';
+      $("updated").textContent = "data niet beschikbaar";
+      const badge = $("fund-badge");
+      badge.textContent = "fout";
+      badge.className = "badge stale";
+    }
+
+    loadGold();
+  }
+
+  main();
+})();
+</script>
 </body>
 </html>
-
