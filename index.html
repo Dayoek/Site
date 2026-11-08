@@ -103,7 +103,7 @@
     padding: 1.25rem 1.35rem 1.1rem;
     display: flex;
     flex-direction: column;
-    min-height: 168px;
+    min-height: 248px;
   }
 
   .tile-label {
@@ -170,6 +170,32 @@
   .chip b { color: var(--text); font-weight: 500; }
   .chip .pos { color: var(--up); }
   .chip .neg { color: var(--down); }
+
+  .spark { height: 54px; margin-top: .85rem; }
+
+  .spark svg { display: block; width: 100%; height: 100%; }
+
+  .spark .line {
+    fill: none;
+    stroke-width: 1.6;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+    vector-effect: non-scaling-stroke;
+  }
+
+  .spark .area { stroke: none; opacity: .15; }
+
+  .spark-empty { font-size: .72rem; color: var(--dim); }
+
+  .spark-meta {
+    display: flex;
+    justify-content: space-between;
+    gap: .5rem;
+    font-size: .66rem;
+    color: var(--dim);
+    margin-top: .35rem;
+    font-variant-numeric: tabular-nums;
+  }
 
   /* ---------- news ---------- */
 
@@ -303,6 +329,8 @@
         </div>
         <div class="value gold" id="gold-value">—</div>
         <div class="sub" id="gold-sub">spot, 24k</div>
+        <div class="spark" id="gold-spark"></div>
+        <div class="spark-meta" id="gold-spark-meta"></div>
         <div class="chips">
           <span class="chip" id="gold-usd">—</span>
           <span class="chip" id="gold-oz">—</span>
@@ -317,6 +345,8 @@
         </div>
         <div class="value" id="fund-value">—</div>
         <div class="sub" id="fund-sub">Institutional Plus EUR Acc · IE00BFPM9N11</div>
+        <div class="spark" id="fund-spark"></div>
+        <div class="spark-meta" id="fund-spark-meta"></div>
         <div class="chips" id="fund-chips"></div>
       </article>
 
@@ -384,14 +414,73 @@
   }
 
   function pct(v) {
-    if (v === null || v === undefined || isNaN(v)) return "—";
-    return (v > 0 ? "+" : "") + num2.format(v) + "%";
-  }
+      if (v === null || v === undefined || isNaN(v)) return "—";
+      return (v > 0 ? "+" : "") + num2.format(v) + "%";
+    }
+
+    function shortDate(iso) {
+      if (!iso) return "";
+      const d = new Date(iso);
+      if (isNaN(d)) return "";
+      return d.toLocaleDateString("nl-NL", { day: "numeric", month: "short" });
+    }
+
+    /* Small trend line from [{d, v}], with an area fill and first/last dates. */
+    function sparkline(host, meta, points) {
+      const pts = (points || [])
+        .filter((p) => p && typeof p.v === "number" && isFinite(p.v))
+        .slice(-120);
+
+      if (pts.length < 2) {
+        host.innerHTML = '<span class="spark-empty">trend volgt zodra er een paar dagen data zijn</span>';
+        if (meta) meta.textContent = "";
+        return;
+      }
+
+      const W = 100;
+      const H = 40;
+      const PAD = 2;
+      const vals = pts.map((p) => p.v);
+      const min = Math.min.apply(null, vals);
+      const max = Math.max.apply(null, vals);
+      const span = (max - min) || 1;
+      const x = (i) => (i / (pts.length - 1)) * W;
+      const y = (v) => PAD + (1 - (v - min) / span) * (H - PAD * 2);
+
+      let d = "";
+      pts.forEach((p, i) => {
+        d += (i ? "L" : "M") + x(i).toFixed(2) + " " + y(p.v).toFixed(2) + " ";
+      });
+      d = d.trim();
+
+      const up = vals[vals.length - 1] >= vals[0];
+      const stroke = up ? "var(--up)" : "var(--down)";
+      const area = d + " L" + W + " " + H + " L0 " + H + " Z";
+
+      host.innerHTML =
+        '<svg viewBox="0 0 ' + W + " " + H + '" preserveAspectRatio="none" aria-hidden="true">' +
+        '<path class="area" d="' + area + '" fill="' + stroke + '"/>' +
+        '<path class="line" d="' + d + '" stroke="' + stroke + '"/>' +
+        "</svg>";
+
+      if (meta) {
+        const change = (vals[vals.length - 1] / vals[0] - 1) * 100;
+        meta.innerHTML =
+          "<span>" + shortDate(pts[0].d) + "</span>" +
+          '<span class="' + signedClass(change) + '">' + pct(change) + "</span>" +
+          "<span>" + shortDate(pts[pts.length - 1].d) + "</span>";
+      }
+    }
 
   /* ---------- gold ---------- */
 
-  async function loadGold() {
+  async function loadGold(goldData) {
     const badge = $("gold-badge");
+    const history = ((goldData && goldData.history) || []).map((row) => ({
+      d: row.date,
+      v: row.eur_per_gram,
+    }));
+
     try {
       const [spotRes, fxRes] = await Promise.all([
         fetch("https://api.gold-api.com/price/XAU", { cache: "no-store" }),
@@ -420,7 +509,15 @@
       badge.textContent = "n.v.t.";
       badge.className = "badge stale";
       $("gold-sub").textContent = "koersbron niet bereikbaar";
+
+      if (history.length) {
+        const last = history[history.length - 1];
+        $("gold-value").textContent = eur.format(last.v);
+        $("gold-sub").textContent = "laatste dagkoers · " + shortDate(last.d);
+      }
     }
+
+    sparkline($("gold-spark"), $("gold-spark-meta"), history);
   }
 
   /* ---------- fund ---------- */
@@ -462,6 +559,12 @@
       chips.push('<span class="chip">3 jaar p/j <b class="' + signedClass(perf["3y"]) + '">' + pct(perf["3y"]) + "</b></span>");
     }
     $("fund-chips").innerHTML = chips.join("");
+
+    sparkline(
+      $("fund-spark"),
+      $("fund-spark-meta"),
+      (fund.history || []).map((row) => ({ d: row.date, v: row.nav }))
+    );
   }
 
   /* ---------- news ---------- */
@@ -528,10 +631,11 @@
   /* ---------- boot ---------- */
 
   async function main() {
+    let data = null;
     try {
       const res = await fetch("data.json", { cache: "no-store" });
       if (!res.ok) throw new Error("data.json " + res.status);
-      const data = await res.json();
+      data = await res.json();
 
       loadFund(data.fund);
       renderNews(data.news);
@@ -548,7 +652,7 @@
       badge.className = "badge stale";
     }
 
-    loadGold();
+    loadGold(data && data.gold);
   }
 
   main();

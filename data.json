@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-08T15:04:52+00:00",
+ "generated_at": "2026-11-08T15:22:57+00:00",
  "fund": {
   "isin": "IE00BFPM9N11",
   "name": "Vanguard Global Stock Index Fund",
@@ -10,6 +10,362 @@
   "nav": 447.34,
   "as_of": "2026-11-06",
   "history": [
+   {
+    "date": "2026-07-06",
+    "nav": 446.92
+   },
+   {
+    "date": "2026-07-07",
+    "nav": 444.29
+   },
+   {
+    "date": "2026-07-08",
+    "nav": 442.42
+   },
+   {
+    "date": "2026-07-09",
+    "nav": 445.09
+   },
+   {
+    "date": "2026-07-10",
+    "nav": 446.99
+   },
+   {
+    "date": "2026-07-13",
+    "nav": 444.79
+   },
+   {
+    "date": "2026-07-14",
+    "nav": 445.25
+   },
+   {
+    "date": "2026-07-15",
+    "nav": 447.28
+   },
+   {
+    "date": "2026-07-16",
+    "nav": 444.99
+   },
+   {
+    "date": "2026-07-17",
+    "nav": 440.83
+   },
+   {
+    "date": "2026-07-20",
+    "nav": 440.79
+   },
+   {
+    "date": "2026-07-21",
+    "nav": 444.78
+   },
+   {
+    "date": "2026-07-22",
+    "nav": 444.69
+   },
+   {
+    "date": "2026-07-23",
+    "nav": 441.21
+   },
+   {
+    "date": "2026-07-24",
+    "nav": 441.5
+   },
+   {
+    "date": "2026-07-27",
+    "nav": 442.42
+   },
+   {
+    "date": "2026-07-28",
+    "nav": 442.25
+   },
+   {
+    "date": "2026-07-29",
+    "nav": 437.28
+   },
+   {
+    "date": "2026-07-30",
+    "nav": 439.75
+   },
+   {
+    "date": "2026-07-31",
+    "nav": 442.06
+   },
+   {
+    "date": "2026-08-03",
+    "nav": 446.96
+   },
+   {
+    "date": "2026-08-04",
+    "nav": 453.16
+   },
+   {
+    "date": "2026-08-05",
+    "nav": 452.45
+   },
+   {
+    "date": "2026-08-06",
+    "nav": 452.51
+   },
+   {
+    "date": "2026-08-07",
+    "nav": 454.83
+   },
+   {
+    "date": "2026-08-10",
+    "nav": 454.86
+   },
+   {
+    "date": "2026-08-11",
+    "nav": 454.18
+   },
+   {
+    "date": "2026-08-12",
+    "nav": 455.36
+   },
+   {
+    "date": "2026-08-13",
+    "nav": 457.65
+   },
+   {
+    "date": "2026-08-14",
+    "nav": 455.83
+   },
+   {
+    "date": "2026-08-17",
+    "nav": 453.68
+   },
+   {
+    "date": "2026-08-18",
+    "nav": 450.57
+   },
+   {
+    "date": "2026-08-19",
+    "nav": 447.86
+   },
+   {
+    "date": "2026-08-20",
+    "nav": 444.57
+   },
+   {
+    "date": "2026-08-21",
+    "nav": 447.0
+   },
+   {
+    "date": "2026-08-24",
+    "nav": 446.21
+   },
+   {
+    "date": "2026-08-25",
+    "nav": 447.7
+   },
+   {
+    "date": "2026-08-26",
+    "nav": 448.3
+   },
+   {
+    "date": "2026-08-27",
+    "nav": 450.2
+   },
+   {
+    "date": "2026-08-28",
+    "nav": 450.52
+   },
+   {
+    "date": "2026-08-31",
+    "nav": 449.07
+   },
+   {
+    "date": "2026-09-01",
+    "nav": 446.74
+   },
+   {
+    "date": "2026-09-02",
+    "nav": 447.86
+   },
+   {
+    "date": "2026-09-03",
+    "nav": 452.07
+   },
+   {
+    "date": "2026-09-04",
+    "nav": 450.96
+   },
+   {
+    "date": "2026-09-07",
+    "nav": 451.07
+   },
+   {
+    "date": "2026-09-08",
+    "nav": 448.52
+   },
+   {
+    "date": "2026-09-09",
+    "nav": 445.39
+   },
+   {
+    "date": "2026-09-10",
+    "nav": 443.16
+   },
+   {
+    "date": "2026-09-11",
+    "nav": 446.59
+   },
+   {
+    "date": "2026-09-14",
+    "nav": 447.11
+   },
+   {
+    "date": "2026-09-15",
+    "nav": 444.83
+   },
+   {
+    "date": "2026-09-16",
+    "nav": 444.06
+   },
+   {
+    "date": "2026-09-17",
+    "nav": 450.27
+   },
+   {
+    "date": "2026-09-18",
+    "nav": 450.47
+   },
+   {
+    "date": "2026-09-21",
+    "nav": 455.91
+   },
+   {
+    "date": "2026-09-22",
+    "nav": 457.17
+   },
+   {
+    "date": "2026-09-23",
+    "nav": 455.2
+   },
+   {
+    "date": "2026-09-24",
+    "nav": 455.41
+   },
+   {
+    "date": "2026-09-25",
+    "nav": 456.96
+   },
+   {
+    "date": "2026-09-28",
+    "nav": 455.45
+   },
+   {
+    "date": "2026-09-29",
+    "nav": 455.11
+   },
+   {
+    "date": "2026-09-30",
+    "nav": 453.78
+   },
+   {
+    "date": "2026-10-01",
+    "nav": 456.73
+   },
+   {
+    "date": "2026-10-02",
+    "nav": 459.23
+   },
+   {
+    "date": "2026-10-05",
+    "nav": 464.58
+   },
+   {
+    "date": "2026-10-06",
+    "nav": 465.64
+   },
+   {
+    "date": "2026-10-07",
+    "nav": 465.72
+   },
+   {
+    "date": "2026-10-08",
+    "nav": 462.63
+   },
+   {
+    "date": "2026-10-09",
+    "nav": 466.08
+   },
+   {
+    "date": "2026-10-12",
+    "nav": 467.11
+   },
+   {
+    "date": "2026-10-13",
+    "nav": 466.4
+   },
+   {
+    "date": "2026-10-14",
+    "nav": 464.85
+   },
+   {
+    "date": "2026-10-15",
+    "nav": 463.15
+   },
+   {
+    "date": "2026-10-16",
+    "nav": 458.65
+   },
+   {
+    "date": "2026-10-19",
+    "nav": 460.63
+   },
+   {
+    "date": "2026-10-20",
+    "nav": 460.32
+   },
+   {
+    "date": "2026-10-21",
+    "nav": 464.07
+   },
+   {
+    "date": "2026-10-22",
+    "nav": 459.74
+   },
+   {
+    "date": "2026-10-23",
+    "nav": 457.56
+   },
+   {
+    "date": "2026-10-26",
+    "nav": 457.56
+   },
+   {
+    "date": "2026-10-27",
+    "nav": 464.99
+   },
+   {
+    "date": "2026-10-28",
+    "nav": 466.12
+   },
+   {
+    "date": "2026-10-29",
+    "nav": 465.06
+   },
+   {
+    "date": "2026-10-30",
+    "nav": 458.13
+   },
+   {
+    "date": "2026-11-02",
+    "nav": 455.05
+   },
+   {
+    "date": "2026-11-03",
+    "nav": 455.7
+   },
+   {
+    "date": "2026-11-04",
+    "nav": 460.8
+   },
+   {
+    "date": "2026-11-05",
+    "nav": 445.98
+   },
    {
     "date": "2026-11-06",
     "nav": 447.34
@@ -25,9 +381,262 @@
    "3y": 18.05,
    "5y": 10.31
   },
-  "previous_nav": null,
-  "change": null,
-  "change_pct": null
+  "previous_nav": 445.98,
+  "change": 1.36,
+  "change_pct": 0.3
+ },
+ "gold": {
+  "stale": false,
+  "usd_per_oz": 4072.100098,
+  "eur_usd": 0.895793,
+  "eur_per_gram": 117.28,
+  "as_of": "2026-11-08",
+  "history": [
+   {
+    "date": "2026-08-17",
+    "eur_per_gram": 121.05
+   },
+   {
+    "date": "2026-08-18",
+    "eur_per_gram": 121.47
+   },
+   {
+    "date": "2026-08-19",
+    "eur_per_gram": 121.77
+   },
+   {
+    "date": "2026-08-20",
+    "eur_per_gram": 121.01
+   },
+   {
+    "date": "2026-08-21",
+    "eur_per_gram": 123.47
+   },
+   {
+    "date": "2026-08-24",
+    "eur_per_gram": 125.88
+   },
+   {
+    "date": "2026-08-25",
+    "eur_per_gram": 128.05
+   },
+   {
+    "date": "2026-08-26",
+    "eur_per_gram": 127.65
+   },
+   {
+    "date": "2026-08-27",
+    "eur_per_gram": 126.68
+   },
+   {
+    "date": "2026-08-28",
+    "eur_per_gram": 126.77
+   },
+   {
+    "date": "2026-08-31",
+    "eur_per_gram": 127.26
+   },
+   {
+    "date": "2026-09-01",
+    "eur_per_gram": 122.8
+   },
+   {
+    "date": "2026-09-02",
+    "eur_per_gram": 121.24
+   },
+   {
+    "date": "2026-09-03",
+    "eur_per_gram": 120.08
+   },
+   {
+    "date": "2026-09-04",
+    "eur_per_gram": 122.91
+   },
+   {
+    "date": "2026-09-07",
+    "eur_per_gram": 124.06
+   },
+   {
+    "date": "2026-09-08",
+    "eur_per_gram": 121.86
+   },
+   {
+    "date": "2026-09-09",
+    "eur_per_gram": 121.61
+   },
+   {
+    "date": "2026-09-10",
+    "eur_per_gram": 121.59
+   },
+   {
+    "date": "2026-09-11",
+    "eur_per_gram": 121.26
+   },
+   {
+    "date": "2026-09-14",
+    "eur_per_gram": 120.02
+   },
+   {
+    "date": "2026-09-15",
+    "eur_per_gram": 119.85
+   },
+   {
+    "date": "2026-09-16",
+    "eur_per_gram": 118.83
+   },
+   {
+    "date": "2026-09-17",
+    "eur_per_gram": 120.09
+   },
+   {
+    "date": "2026-09-18",
+    "eur_per_gram": 120.81
+   },
+   {
+    "date": "2026-09-21",
+    "eur_per_gram": 123.21
+   },
+   {
+    "date": "2026-09-22",
+    "eur_per_gram": 122.13
+   },
+   {
+    "date": "2026-09-23",
+    "eur_per_gram": 121.14
+   },
+   {
+    "date": "2026-09-24",
+    "eur_per_gram": 120.72
+   },
+   {
+    "date": "2026-09-25",
+    "eur_per_gram": 120.77
+   },
+   {
+    "date": "2026-09-28",
+    "eur_per_gram": 121.1
+   },
+   {
+    "date": "2026-09-29",
+    "eur_per_gram": 117.23
+   },
+   {
+    "date": "2026-09-30",
+    "eur_per_gram": 117.43
+   },
+   {
+    "date": "2026-10-01",
+    "eur_per_gram": 118.38
+   },
+   {
+    "date": "2026-10-02",
+    "eur_per_gram": 118.31
+   },
+   {
+    "date": "2026-10-05",
+    "eur_per_gram": 119.26
+   },
+   {
+    "date": "2026-10-06",
+    "eur_per_gram": 119.9
+   },
+   {
+    "date": "2026-10-07",
+    "eur_per_gram": 118.56
+   },
+   {
+    "date": "2026-10-08",
+    "eur_per_gram": 118.41
+   },
+   {
+    "date": "2026-10-09",
+    "eur_per_gram": 118.58
+   },
+   {
+    "date": "2026-10-12",
+    "eur_per_gram": 119.7
+   },
+   {
+    "date": "2026-10-13",
+    "eur_per_gram": 120.1
+   },
+   {
+    "date": "2026-10-14",
+    "eur_per_gram": 120.63
+   },
+   {
+    "date": "2026-10-15",
+    "eur_per_gram": 119.02
+   },
+   {
+    "date": "2026-10-16",
+    "eur_per_gram": 119.07
+   },
+   {
+    "date": "2026-10-19",
+    "eur_per_gram": 119.64
+   },
+   {
+    "date": "2026-10-20",
+    "eur_per_gram": 119.54
+   },
+   {
+    "date": "2026-10-21",
+    "eur_per_gram": 118.26
+   },
+   {
+    "date": "2026-10-22",
+    "eur_per_gram": 117.89
+   },
+   {
+    "date": "2026-10-23",
+    "eur_per_gram": 116.22
+   },
+   {
+    "date": "2026-10-26",
+    "eur_per_gram": 115.28
+   },
+   {
+    "date": "2026-10-27",
+    "eur_per_gram": 115.2
+   },
+   {
+    "date": "2026-10-28",
+    "eur_per_gram": 115.41
+   },
+   {
+    "date": "2026-10-29",
+    "eur_per_gram": 117.54
+   },
+   {
+    "date": "2026-10-30",
+    "eur_per_gram": 116.32
+   },
+   {
+    "date": "2026-11-02",
+    "eur_per_gram": 114.0
+   },
+   {
+    "date": "2026-11-03",
+    "eur_per_gram": 111.59
+   },
+   {
+    "date": "2026-11-04",
+    "eur_per_gram": 112.86
+   },
+   {
+    "date": "2026-11-05",
+    "eur_per_gram": 115.66
+   },
+   {
+    "date": "2026-11-06",
+    "eur_per_gram": 118.01
+   },
+   {
+    "date": "2026-11-08",
+    "eur_per_gram": 117.28
+   }
+  ]
  },
  "news": {
   "tweakers": {
@@ -110,6 +719,16 @@
    "feed": "https://www.rtlnieuws.nl/rss.xml",
    "items": [
     {
+     "title": "Shelley Vol totaal verrast door huwelijksaanzoek na tien jaar samen: 'Ik had het losgelaten'",
+     "link": "https://www.rtl.nl/boulevard/artikel/5663932/shelley-vol-zag-huwelijksaanzoek-niet-aankomen",
+     "published": "2026-11-08T15:14:16+00:00"
+    },
+    {
+     "title": "Douwe Bob geëmotioneerd over opkomst bij Rode Lijn-protest: 'Fijn om te zien'",
+     "link": "https://www.rtl.nl/boulevard/artikel/5663939/douwe-bob-geemotioneerd-over-opkomst-bij-rode-lijn-protest",
+     "published": "2026-11-08T15:11:34+00:00"
+    },
+    {
      "title": "Politie zoekt met honden naar vermiste Lisa (13) uit Berlijn, die ineens spoorloos verdween",
      "link": "https://www.rtl.nl/nieuws/buitenland/artikel/5663937/politie-zoekt-naar-vermiste-lisa-13-die-plotseling-spoorloos",
      "published": "2026-11-08T14:45:57+00:00"
@@ -128,16 +747,43 @@
      "title": "Nieuwe assistent van Sinterklaas maandag onthuld: zo kun je de bekendmaking zien",
      "link": "https://www.rtl.nl/boulevard/artikel/5663935/sinterklaas-onthulling-bekendmaking-wanneer-datum",
      "published": "2026-11-08T14:33:02+00:00"
+    }
+   ]
+  },
+  "security": {
+   "label": "Security.NL",
+   "site": "https://www.security.nl",
+   "feed": "https://www.security.nl/rss/headlines.xml",
+   "items": [
+    {
+     "title": "Kabinet wil dat NCSC scanplatform ontwikkelt voor vinden van kwetsbaarheden",
+     "link": "https://www.security.nl/posting/960765/Kabinet+wil+dat+NCSC+scanplatform+ontwikkelt+voor+vinden+van+kwetsbaarheden?channel=rss",
+     "published": "2026-11-07T12:37:31+00:00"
     },
     {
-     "title": "Gigantische ‘stekkerdozen op zee’ moeten Nederland van groene stroom voorzien",
-     "link": "https://www.rtl.nl/nieuws/buitenland/video/5373282e-b767-4f51-b154-19f2f30800f6/gigantische-stekkerdozen-op-zee-moeten",
-     "published": "2026-11-08T14:17:36+00:00"
+     "title": "SonicWall waarschuwt voor lek waarmee aanvallers MFA van SSL-VPN omzeilen",
+     "link": "https://www.security.nl/posting/960763/SonicWall+waarschuwt+voor+lek+waarmee+aanvallers+MFA+van+SSL-VPN+omzeilen?channel=rss",
+     "published": "2026-11-07T12:05:09+00:00"
     },
     {
-     "title": "Burgemeester Marcouch: geweld en vuurwerk in stadions uitbannen",
-     "link": "https://www.rtl.nl/nieuws/sport/artikel/5663933/burgemeester-marcouch-geweld-en-vuurwerk-stadions-uitbannen",
-     "published": "2026-11-08T14:17:05+00:00"
+     "title": "Microsoft publiceert wegens RCE-lek nieuwe versie Windows Paint",
+     "link": "https://www.security.nl/posting/960761/Microsoft+publiceert+wegens+RCE-lek+nieuwe+versie+Windows+Paint?channel=rss",
+     "published": "2026-11-07T11:49:00+00:00"
+    },
+    {
+     "title": "Overheid: digitale weerbaarheid Nederland blijft achter bij cyberdreiging",
+     "link": "https://www.security.nl/posting/960681/Overheid%3A+digitale+weerbaarheid+Nederland+blijft+achter+bij+cyberdreiging?channel=rss",
+     "published": "2026-11-06T16:16:33+00:00"
+    },
+    {
+     "title": "VS klaagt drietal aan voor diefstal van 129 miljoen dollar via 'AI-directeur'",
+     "link": "https://www.security.nl/posting/960668/VS+klaagt+drietal+aan+voor+diefstal+van+129+miljoen+dollar+via+%27AI-directeur%27?channel=rss",
+     "published": "2026-11-06T15:11:46+00:00"
+    },
+    {
+     "title": "QNAP waarschuwt Plex-gebruikers voor Plex2Shell: 'Meteen patchen'",
+     "link": "https://www.security.nl/posting/960654/QNAP+waarschuwt+Plex-gebruikers+voor+Plex2Shell%3A+%27Meteen+patchen%27?channel=rss",
+     "published": "2026-11-06T14:15:17+00:00"
     }
    ]
   },
@@ -185,9 +831,24 @@
    "feed": "https://www.cnnturk.com/feed/rss/all/news",
    "items": [
     {
-     "title": "SON DAKİKA... Aliyev 11 Kasım’da Antalya’daki COP Zirvesi’ne katılacak",
+     "title": "Haberin telif hakkı için yasal adım",
+     "link": "https://www.cnnturk.com/video/turkiye/haberin-telif-hakki-icin-yasal-adim-3490627",
+     "published": "2026-11-08T18:12:49+00:00"
+    },
+    {
+     "title": "SON DAKİKA | Türkiye ve Irak'tan ortak açıklama: PKK'ya karşı ortak irade!",
+     "link": "https://www.cnnturk.com/turkiye/son-dakika-turkiye-ve-iraktan-ortak-aciklama-pkkya-karsi-ortak-irade-3490626",
+     "published": "2026-11-08T18:11:40+00:00"
+    },
+    {
+     "title": "SON DAKİKA | Azerbaycan Cumhurbaşkanı Aliyev COP31 Zirvesi'ne katılacak",
+     "link": "https://www.cnnturk.com/dunya/son-dakika-azerbaycan-cumhurbaskani-aliyev-cop31-zirvesine-katilacak-3490625",
+     "published": "2026-11-08T18:02:46+00:00"
+    },
+    {
+     "title": "SON DAKİKA... Azerbaycan Cumhurbaşkanı Aliyev, 11 Kasım’da Antalya’daki COP Zirvesi’ne katılacak",
      "link": "https://www.cnnturk.com/turkiye/son-dakika-aliyev-11-kasimda-antalyadaki-cop-zirvesine-katilacak-3490624",
-     "published": "2026-11-08T18:00:55+00:00"
+     "published": "2026-11-08T18:01:38+00:00"
     },
     {
      "title": "Çorum FK 0-5 Fenerbahçe MAÇ ÖZETİ | Sarı-lacivertliler gole doydu",
@@ -198,21 +859,6 @@
      "title": "Karabağ’da Cumhurbaşkanı Erdoğan’ın en sevdiği şarkı çalındı",
      "link": "https://www.cnnturk.com/video/turkiye/karabagda-cumhurbaskani-erdoganin-en-sevdigi-sarki-calindi-3490622",
      "published": "2026-11-08T17:45:09+00:00"
-    },
-    {
-     "title": "Erdoğan ve Aliyev, Şuşa Kalesi'ni ziyaret etti",
-     "link": "https://www.cnnturk.com/turkiye/erdogan-ve-aliyev-susa-kalesini-ziyaret-etti-3490621",
-     "published": "2026-11-08T17:49:38+00:00"
-    },
-    {
-     "title": "BEŞİKTAŞ GENÇLERBİRLİĞİ ŞİFRESİZ CANLI İZLE| Beşiktaş Gençlerbirliği Maçı Saat Kaçta, Hangi Kanalda, Şifresiz Mi? Milli Ara Öncesi Son Puanlar! İşte Maç Kadroları",
-     "link": "https://www.cnnturk.com/spor/futbol/besiktas-genclerbirligi-canli-izle-sifresiz-besiktas-genclerbirligi-maci-saat-kacta-hangi-kanalda-sifresiz-mi-milli-ara-oncesi-3490563",
-     "published": "2026-11-08T17:37:56+00:00"
-    },
-    {
-     "title": "ALANYASPOR TRABZONSPOR CANLI İZLE ŞİFRESİZ| Corendon Alanyaspor Trabzonspor Maçı Saat Kaçta, Hangi Kanalda, Şifresiz Mi? İşte Maç Kadroları",
-     "link": "https://www.cnnturk.com/spor/futbol/alanyaspor-trabzonspor-canli-izle-sifresiz-corendon-alanyaspor-trabzonspor-maci-saat-kacta-hangi-kanalda-sifresiz-mi-iste-mac-3490538",
-     "published": "2026-11-08T17:37:34+00:00"
     }
    ]
   }
