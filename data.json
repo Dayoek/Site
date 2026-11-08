@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-08T15:22:57+00:00",
+ "generated_at": "2026-11-08T15:28:42+00:00",
  "fund": {
   "isin": "IE00BFPM9N11",
   "name": "Vanguard Global Stock Index Fund",
@@ -793,6 +793,11 @@
    "feed": null,
    "items": [
     {
+     "title": "Two trains collide in Egypt, killing four people and injuring scores more, authorities say",
+     "link": "https://www.cnn.com/2026/11/08/africa/egypt-train-collision-deaths-intl",
+     "published": "2026-11-08T00:00:00+00:00"
+    },
+    {
      "title": "Poland stunned as suspect with far-right views kills 6 in Kraków mass shooting",
      "link": "https://www.cnn.com/2026/11/07/europe/krakow-shooting-poland-killed-intl",
      "published": "2026-11-07T00:00:00+00:00"
@@ -815,11 +820,6 @@
     {
      "title": "Hiding in plain sight? Russell Brand’s conviction poses tough questions for UK entertainment industry",
      "link": "https://www.cnn.com/2026/11/08/uk/russell-brand-conviction-reaction-intl",
-     "published": "2026-11-08T00:00:00+00:00"
-    },
-    {
-     "title": "The vanity economy is taking over America’s downtowns",
-     "link": "https://www.cnn.com/2026/11/08/business/cities-retail-vanity-economy",
      "published": "2026-11-08T00:00:00+00:00"
     }
    ],
