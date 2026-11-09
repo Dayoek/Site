@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-08T15:28:42+00:00",
+ "generated_at": "2026-11-09T20:54:20+00:00",
  "fund": {
   "isin": "IE00BFPM9N11",
   "name": "Vanguard Global Stock Index Fund",
@@ -387,10 +387,10 @@
  },
  "gold": {
   "stale": false,
-  "usd_per_oz": 4072.100098,
-  "eur_usd": 0.895793,
-  "eur_per_gram": 117.28,
-  "as_of": "2026-11-08",
+  "usd_per_oz": 4142.200195,
+  "eur_usd": 0.896919,
+  "eur_per_gram": 119.45,
+  "as_of": "2026-11-09",
   "history": [
    {
     "date": "2026-08-17",
@@ -635,6 +635,10 @@
    {
     "date": "2026-11-08",
     "eur_per_gram": 117.28
+   },
+   {
+    "date": "2026-11-09",
+    "eur_per_gram": 119.45
    }
   ]
  },
@@ -645,34 +649,34 @@
    "feed": "https://tweakers.net/feeds/nieuws.xml",
    "items": [
     {
-     "title": "Odido-klanten in buitenland ervaren door storing problemen met roaming - Update",
-     "link": "https://tweakers.net/nieuws/254290/odido-klanten-in-buitenland-ervaren-door-storing-problemen-met-roaming.html",
-     "published": "2026-11-08T11:21:37+00:00"
+     "title": "EU klaagt IBM, Atos en Leonardo aan om vertraagd grenssysteem",
+     "link": "https://tweakers.net/nieuws/254336/eu-klaagt-ibm-atos-en-leonardo-aan-om-vertraagd-grenssysteem.html",
+     "published": "2026-11-09T20:21:16+00:00"
     },
     {
-     "title": "'TSMC overweegt productie van geavanceerde geheugenchips op verzoek van Nvidia'",
-     "link": "https://tweakers.net/nieuws/254288/tsmc-overweegt-productie-van-geavanceerde-geheugenchips-op-verzoek-van-nvidia.html",
-     "published": "2026-11-08T11:08:41+00:00"
+     "title": "Enexis stuurt door storing geen meterstanden naar energieleveranciers",
+     "link": "https://tweakers.net/nieuws/254328/enexis-stuurt-door-storing-geen-meterstanden-naar-energieleveranciers.html",
+     "published": "2026-11-09T19:14:37+00:00"
     },
     {
-     "title": "Microsoft brengt patch uit voor rce-lek in Paint na eerdere mislukte uitrol",
-     "link": "https://tweakers.net/nieuws/254286/microsoft-brengt-patch-uit-voor-rce-lek-in-paint-na-eerdere-mislukte-uitrol.html",
-     "published": "2026-11-08T10:00:07+00:00"
+     "title": "Japanse PlayStation Portal krijgt meer opslag 'voor nieuwe functies'",
+     "link": "https://tweakers.net/nieuws/254334/japanse-playstation-portal-krijgt-meer-opslag-voor-nieuwe-functies.html",
+     "published": "2026-11-09T18:12:17+00:00"
     },
     {
-     "title": "Nvidia-ceo moet zich verantwoorden voor 'liefdesrelatie' met Chinese spion",
-     "link": "https://tweakers.net/nieuws/254284/nvidia-ceo-moet-zich-verantwoorden-voor-liefdesrelatie-met-chinese-spion.html",
-     "published": "2026-11-08T09:10:20+00:00"
+     "title": "Google kondigt twee AI-chipsystemen aan met betere beveiliging of efficiëntie",
+     "link": "https://tweakers.net/nieuws/254330/google-kondigt-twee-ai-chipsystemen-aan-met-betere-beveiliging-of-efficientie.html",
+     "published": "2026-11-09T17:26:07+00:00"
     },
     {
-     "title": "Canadezen willen gesloten gamestudio BioWare met officiële petitie redden",
-     "link": "https://tweakers.net/nieuws/254280/canadezen-willen-gesloten-gamestudio-bioware-met-officiele-petitie-redden.html",
-     "published": "2026-11-07T11:59:53+00:00"
+     "title": "Frankrijk: Iran zat achter hacks op koelsystemen van Franse supermarkten",
+     "link": "https://tweakers.net/nieuws/254332/frankrijk-iran-zat-achter-hacks-op-koelsystemen-van-franse-supermarkten.html",
+     "published": "2026-11-09T16:51:12+00:00"
     },
     {
-     "title": "Nederlands kabinet wil nationale dronedatabase om illegale vluchten te stoppen",
-     "link": "https://tweakers.net/nieuws/254278/nederlands-kabinet-wil-nationale-dronedatabase-om-illegale-vluchten-te-stoppen.html",
-     "published": "2026-11-07T11:15:20+00:00"
+     "title": "AMD erkent dat driverbug veel onnodige ssd-schrijfacties oplevert",
+     "link": "https://tweakers.net/nieuws/254324/amd-erkent-dat-driverbug-veel-onnodige-ssd-schrijfacties-oplevert.html",
+     "published": "2026-11-09T16:00:52+00:00"
     }
    ]
   },
@@ -682,34 +686,34 @@
    "feed": "https://feeds.nos.nl/nosnieuwsalgemeen",
    "items": [
     {
-     "title": "Nederlandse (81) overleden na ongeluk waarbij camper kantelde op snelweg in België",
-     "link": "https://nos.nl/l/2638577",
-     "published": "2026-11-08T14:51:00+00:00"
+     "title": "Inwoonster Baarle-Hertog mishandeld na aanspreken van jongen op afsteken van vuurwerk",
+     "link": "https://nos.nl/l/2638787",
+     "published": "2026-11-09T20:26:35+00:00"
     },
     {
-     "title": "Kaapstad ruziet over plan om 'probleembavianen' op te sluiten",
-     "link": "https://nos.nl/l/2638573",
-     "published": "2026-11-08T14:42:11+00:00"
+     "title": "Zestien doden na explosie en brand in Turkse fabriek, meerdere aanhoudingen",
+     "link": "https://nos.nl/l/2638786",
+     "published": "2026-11-09T20:12:14+00:00"
     },
     {
-     "title": "Personeel kinderopvang Israëlische nederzetting aangeklaagd voor zware mishandeling",
-     "link": "https://nos.nl/l/2638566",
-     "published": "2026-11-08T13:59:42+00:00"
+     "title": "Dodelijke schietpartij Schiedam: lichtgewonde verdachte vrijgelaten",
+     "link": "https://nos.nl/l/2638784",
+     "published": "2026-11-09T20:04:42+00:00"
     },
     {
-     "title": "Gebouw van Saudisch staatsoliebedrijf in hartje Riyad beschadigd bij raketaanval",
-     "link": "https://nos.nl/l/2638563",
-     "published": "2026-11-08T13:47:01+00:00"
+     "title": "Proef met minder bewaking in gevangenissen om personeelstekort op te vangen",
+     "link": "https://nos.nl/l/2638783",
+     "published": "2026-11-09T19:51:24+00:00"
     },
     {
-     "title": "Veroordeelde zoon Noorse koningin aangevallen in eigen woning, politie begint onderzoek",
-     "link": "https://nos.nl/l/2638562",
-     "published": "2026-11-08T13:34:10+00:00"
+     "title": "Nederlandse rabbijn in opleiding helpt Palestijnen: 'Kolonisten vallen iedereen aan'",
+     "link": "https://nos.nl/l/2638781",
+     "published": "2026-11-09T19:47:30+00:00"
     },
     {
-     "title": "Zeker 200.000 mensen bij Rode Lijn-demonstratie in Amsterdam, zegt organisatie",
-     "link": "https://nos.nl/l/2638553",
-     "published": "2026-11-08T11:56:23+00:00"
+     "title": "Megadrugszaak tegen 46 verdachten in België, hoofdverdachte ontkent moordpogingen",
+     "link": "https://nos.nl/l/2638779",
+     "published": "2026-11-09T19:31:41+00:00"
     }
    ]
   },
@@ -719,34 +723,34 @@
    "feed": "https://www.rtlnieuws.nl/rss.xml",
    "items": [
     {
-     "title": "Shelley Vol totaal verrast door huwelijksaanzoek na tien jaar samen: 'Ik had het losgelaten'",
-     "link": "https://www.rtl.nl/boulevard/artikel/5663932/shelley-vol-zag-huwelijksaanzoek-niet-aankomen",
-     "published": "2026-11-08T15:14:16+00:00"
+     "title": "Kijkers verbazen zich over loslippige helpers in Hunted: 'Zo jammer'",
+     "link": "https://www.rtl.nl/boulevard/artikel/5664168/kijkers-verbazen-zich-over-loslippige-helpers-hunted",
+     "published": "2026-11-09T20:33:59+00:00"
     },
     {
-     "title": "Douwe Bob geëmotioneerd over opkomst bij Rode Lijn-protest: 'Fijn om te zien'",
-     "link": "https://www.rtl.nl/boulevard/artikel/5663939/douwe-bob-geemotioneerd-over-opkomst-bij-rode-lijn-protest",
-     "published": "2026-11-08T15:11:34+00:00"
+     "title": "TMZ: vader van Meghan Markle mag niet terug naar appartement",
+     "link": "https://www.rtl.nl/boulevard/entertainment/artikel/5664169/tmz-vader-van-meghan-markle-mag-niet-terug-naar-appartement",
+     "published": "2026-11-09T20:32:12+00:00"
     },
     {
-     "title": "Politie zoekt met honden naar vermiste Lisa (13) uit Berlijn, die ineens spoorloos verdween",
-     "link": "https://www.rtl.nl/nieuws/buitenland/artikel/5663937/politie-zoekt-naar-vermiste-lisa-13-die-plotseling-spoorloos",
-     "published": "2026-11-08T14:45:57+00:00"
+     "title": "Zestien doden door explosie in staalfabriek in Turkije",
+     "link": "https://www.rtl.nl/nieuws/buitenland/artikel/5664165/explosie-staalfabriek-turkije",
+     "published": "2026-11-09T20:15:19+00:00"
     },
     {
-     "title": "Motorcoureur Veijer valt meteen uit bij GP van Qatar",
-     "link": "https://www.rtl.nl/nieuws/sport/artikel/5663938/motorcoureur-veijer-valt-meteen-uit-bij-gp-van-qatar",
-     "published": "2026-11-08T14:41:59+00:00"
+     "title": "Grote explosie bij ijzer- en staalfabriek Turkije",
+     "link": "https://www.rtl.nl/nieuws/buitenland/video/4869a237-28d0-406e-8699-6587a47af540/grote-explosie-bij-ijzer-en",
+     "published": "2026-11-09T20:07:15+00:00"
     },
     {
-     "title": "Ruim zestig gewonden na botsing tussen treinen in Egypte",
-     "link": "https://www.rtl.nl/nieuws/buitenland/artikel/5663936/treinen-botsing-egypte",
-     "published": "2026-11-08T14:35:59+00:00"
+     "title": "Pierre Bokma ziet rol in GTST wel zitten: \"Ze hebben nooit gereageerd\"",
+     "link": "https://www.rtl.nl/boulevard/artikel/5664163/pierre-bokma-ziet-rol-gtst-wel-zitten",
+     "published": "2026-11-09T19:51:41+00:00"
     },
     {
-     "title": "Nieuwe assistent van Sinterklaas maandag onthuld: zo kun je de bekendmaking zien",
-     "link": "https://www.rtl.nl/boulevard/artikel/5663935/sinterklaas-onthulling-bekendmaking-wanneer-datum",
-     "published": "2026-11-08T14:33:02+00:00"
+     "title": "Realityster Charlotte heeft geen contact meer met de vader van haar dochter: 'Hij heeft me heel veel aangedaan'",
+     "link": "https://www.rtl.nl/boulevard/artikel/5664161/charlotte-fix-over-moeizame-band-met-vader-dochter",
+     "published": "2026-11-09T19:42:44+00:00"
     }
    ]
   },
@@ -756,34 +760,34 @@
    "feed": "https://www.security.nl/rss/headlines.xml",
    "items": [
     {
-     "title": "Kabinet wil dat NCSC scanplatform ontwikkelt voor vinden van kwetsbaarheden",
-     "link": "https://www.security.nl/posting/960765/Kabinet+wil+dat+NCSC+scanplatform+ontwikkelt+voor+vinden+van+kwetsbaarheden?channel=rss",
-     "published": "2026-11-07T12:37:31+00:00"
+     "title": "EFF hekelt Google over het opdringen van AI aan scholen",
+     "link": "https://www.security.nl/posting/960915/EFF+hekelt+Google+over+het+opdringen+van+AI+aan+scholen?channel=rss",
+     "published": "2026-11-09T13:17:34+00:00"
     },
     {
-     "title": "SonicWall waarschuwt voor lek waarmee aanvallers MFA van SSL-VPN omzeilen",
-     "link": "https://www.security.nl/posting/960763/SonicWall+waarschuwt+voor+lek+waarmee+aanvallers+MFA+van+SSL-VPN+omzeilen?channel=rss",
-     "published": "2026-11-07T12:05:09+00:00"
+     "title": "Minister: politiedrones voor verkeershandhaving beschikken niet over AI",
+     "link": "https://www.security.nl/posting/960895/Minister%3A+politiedrones+voor+verkeershandhaving+beschikken+niet+over+AI?channel=rss",
+     "published": "2026-11-09T13:00:03+00:00"
     },
     {
-     "title": "Microsoft publiceert wegens RCE-lek nieuwe versie Windows Paint",
-     "link": "https://www.security.nl/posting/960761/Microsoft+publiceert+wegens+RCE-lek+nieuwe+versie+Windows+Paint?channel=rss",
-     "published": "2026-11-07T11:49:00+00:00"
+     "title": "Nieuwe versie 7-Zip verhelpt meerdere bugs en kwetsbaarheden",
+     "link": "https://www.security.nl/posting/960910/Nieuwe+versie+7-Zip+verhelpt+meerdere+bugs+en+kwetsbaarheden?channel=rss",
+     "published": "2026-11-09T12:43:58+00:00"
     },
     {
-     "title": "Overheid: digitale weerbaarheid Nederland blijft achter bij cyberdreiging",
-     "link": "https://www.security.nl/posting/960681/Overheid%3A+digitale+weerbaarheid+Nederland+blijft+achter+bij+cyberdreiging?channel=rss",
-     "published": "2026-11-06T16:16:33+00:00"
+     "title": "Medewerker Marechaussee verdacht van stelen cryptovaluta reiziger",
+     "link": "https://www.security.nl/posting/960902/Medewerker+Marechaussee+verdacht+van+stelen+cryptovaluta+reiziger?channel=rss",
+     "published": "2026-11-09T12:36:12+00:00"
     },
     {
-     "title": "VS klaagt drietal aan voor diefstal van 129 miljoen dollar via 'AI-directeur'",
-     "link": "https://www.security.nl/posting/960668/VS+klaagt+drietal+aan+voor+diefstal+van+129+miljoen+dollar+via+%27AI-directeur%27?channel=rss",
-     "published": "2026-11-06T15:11:46+00:00"
+     "title": "Topgeschenken meldt diefstal klantgegevens, omvang datalek nog onbekend",
+     "link": "https://www.security.nl/posting/960898/Topgeschenken+meldt+diefstal+klantgegevens%2C+omvang+datalek+nog+onbekend?channel=rss",
+     "published": "2026-11-09T12:18:36+00:00"
     },
     {
-     "title": "QNAP waarschuwt Plex-gebruikers voor Plex2Shell: 'Meteen patchen'",
-     "link": "https://www.security.nl/posting/960654/QNAP+waarschuwt+Plex-gebruikers+voor+Plex2Shell%3A+%27Meteen+patchen%27?channel=rss",
-     "published": "2026-11-06T14:15:17+00:00"
+     "title": "Kabinet trekt miljoenen uit voor ontwikkeling van 'nieuw innovatief sirenenetwerk'",
+     "link": "https://www.security.nl/posting/960863/Kabinet+trekt+miljoenen+uit+voor+ontwikkeling+van+%27nieuw+innovatief+sirenenetwerk%27?channel=rss",
+     "published": "2026-11-09T10:20:00+00:00"
     }
    ]
   },
@@ -793,34 +797,34 @@
    "feed": null,
    "items": [
     {
-     "title": "Two trains collide in Egypt, killing four people and injuring scores more, authorities say",
-     "link": "https://www.cnn.com/2026/11/08/africa/egypt-train-collision-deaths-intl",
-     "published": "2026-11-08T00:00:00+00:00"
+     "title": "Judge sets trial date for Charlie Kirk’s accused killer for summer 2028",
+     "link": "https://www.cnn.com/2026/11/09/us/tyler-robinson-charlie-kirk-trial",
+     "published": "2026-11-09T00:00:00+00:00"
     },
     {
-     "title": "Poland stunned as suspect with far-right views kills 6 in Kraków mass shooting",
-     "link": "https://www.cnn.com/2026/11/07/europe/krakow-shooting-poland-killed-intl",
-     "published": "2026-11-07T00:00:00+00:00"
+     "title": "Nvidia stock falls after investigation into CEO, bucking market rally",
+     "link": "https://www.cnn.com/2026/11/09/investing/nvidia-stock-huang-investigation",
+     "published": "2026-11-09T00:00:00+00:00"
     },
     {
-     "title": "CNN analysis uncovers construction flaws in public housing towers that collapsed during Venezuela quakes",
-     "link": "https://www.cnn.com/2026/11/08/americas/construction-flaws-venezuela-quakes-investigation-intl-latam",
-     "published": "2026-11-08T00:00:00+00:00"
+     "title": "The fierce battle for James Bond is playing out in public",
+     "link": "https://www.cnn.com/2026/11/09/entertainment/james-bond-casting",
+     "published": "2026-11-09T00:00:00+00:00"
     },
     {
-     "title": "Building owned by Saudi oil giant damaged in missile attack on Riyadh’s financial district",
-     "link": "https://www.cnn.com/2026/11/08/middleeast/saudi-arabia-riyadh-missile-financial-intl",
-     "published": "2026-11-08T00:00:00+00:00"
+     "title": "Gunman who killed at least 6 in Kraków mass shooting dies in hospital",
+     "link": "https://www.cnn.com/2026/11/09/europe/krakow-shooting-poland-gunman-dead-intl-hnk",
+     "published": "2026-11-09T00:00:00+00:00"
     },
     {
-     "title": "As fresh talks near, Putin appears set on wrecking Ukraine’s economy, leaving Kyiv facing the toughest winter yet",
-     "link": "https://www.cnn.com/2026/11/08/europe/ukraine-russia-attacks-energy-infrastructure-economy-intl",
-     "published": "2026-11-08T00:00:00+00:00"
+     "title": "GOP Rep. Lauren Boebert will lose reelection to Democrat Eileen Laubacher in Colorado, CNN projects",
+     "link": "https://www.cnn.com/2026/11/09/politics/lauren-boebert-lose-reelection-eileen-laubacher",
+     "published": "2026-11-09T00:00:00+00:00"
     },
     {
-     "title": "Hiding in plain sight? Russell Brand’s conviction poses tough questions for UK entertainment industry",
-     "link": "https://www.cnn.com/2026/11/08/uk/russell-brand-conviction-reaction-intl",
-     "published": "2026-11-08T00:00:00+00:00"
+     "title": "US FDA orders new eye risk warnings for Ozempic, Zepbound",
+     "link": "https://www.cnn.com/2026/11/09/health/glp1-vision-loss-fda-warning",
+     "published": "2026-11-09T00:00:00+00:00"
     }
    ],
    "note": "lite.cnn.com: CNN publishes no RSS since 2023"
@@ -831,34 +835,34 @@
    "feed": "https://www.cnnturk.com/feed/rss/all/news",
    "items": [
     {
-     "title": "Haberin telif hakkı için yasal adım",
-     "link": "https://www.cnnturk.com/video/turkiye/haberin-telif-hakki-icin-yasal-adim-3490627",
-     "published": "2026-11-08T18:12:49+00:00"
+     "title": "Apple duyurdu: Türkiye'ye uzun vadeli yatırım yapacağız! Bakan Kacır: Dijital ekonomiyi büyüteceğiz",
+     "link": "https://www.cnnturk.com/turkiye/apple-duyurdu-turkiyeye-uzun-vadeli-yatirim-yapacagiz-bakan-kacir-dijital-ekonomiyi-buyutecegiz-3491143",
+     "published": "2026-11-09T23:06:50+00:00"
     },
     {
-     "title": "SON DAKİKA | Türkiye ve Irak'tan ortak açıklama: PKK'ya karşı ortak irade!",
-     "link": "https://www.cnnturk.com/turkiye/son-dakika-turkiye-ve-iraktan-ortak-aciklama-pkkya-karsi-ortak-irade-3490626",
-     "published": "2026-11-08T18:11:40+00:00"
+     "title": "Fransa'da Le Pen ankette zirvede",
+     "link": "https://www.cnnturk.com/video/dunya/fransada-le-pen-ankette-zirvede-3491144",
+     "published": "2026-11-09T23:04:28+00:00"
     },
     {
-     "title": "SON DAKİKA | Azerbaycan Cumhurbaşkanı Aliyev COP31 Zirvesi'ne katılacak",
-     "link": "https://www.cnnturk.com/dunya/son-dakika-azerbaycan-cumhurbaskani-aliyev-cop31-zirvesine-katilacak-3490625",
-     "published": "2026-11-08T18:02:46+00:00"
+     "title": "Lyon, Carlos Vicens'e emanet",
+     "link": "https://www.cnnturk.com/spor/futbol/lyon-carlos-vicense-emanet-3491142",
+     "published": "2026-11-09T22:57:04+00:00"
     },
     {
-     "title": "SON DAKİKA... Azerbaycan Cumhurbaşkanı Aliyev, 11 Kasım’da Antalya’daki COP Zirvesi’ne katılacak",
-     "link": "https://www.cnnturk.com/turkiye/son-dakika-aliyev-11-kasimda-antalyadaki-cop-zirvesine-katilacak-3490624",
-     "published": "2026-11-08T18:01:38+00:00"
+     "title": "10 KASIM ANKARA TRAFİĞE KAPALI YOLLAR! Ankara'da Hangi Yollar Trafiğe Kapatılacak?",
+     "link": "https://www.cnnturk.com/turkiye/10-kasim-ankara-trafige-kapali-yollar-ankarada-hangi-yollar-trafige-kapatilacak-3491141",
+     "published": "2026-11-09T22:48:23+00:00"
     },
     {
-     "title": "Çorum FK 0-5 Fenerbahçe MAÇ ÖZETİ | Sarı-lacivertliler gole doydu",
-     "link": "https://www.cnnturk.com/spor/futbol/live-corum-fk-0-5-fenerbahce-mac-ozeti-sari-lacivertliler-gole-doydu-3490477",
-     "published": "2026-11-08T17:52:55+00:00"
+     "title": "10 KASIM RESMİ TATİL Mİ? 10 Kasım'da Okullar Tatil Mi? 10 Kasım Hangi Güne Denk Geliyor? 10 Kasım Atatürk'ü Anma Günü Yarım Gün Mü?",
+     "link": "https://www.cnnturk.com/turkiye/10-kasim-resmi-tatil-mi-10-kasimda-okullar-tatil-mi-10-kasim-hangi-gune-denk-geliyor-3490487",
+     "published": "2026-11-09T22:40:04+00:00"
     },
     {
-     "title": "Karabağ’da Cumhurbaşkanı Erdoğan’ın en sevdiği şarkı çalındı",
-     "link": "https://www.cnnturk.com/video/turkiye/karabagda-cumhurbaskani-erdoganin-en-sevdigi-sarki-calindi-3490622",
-     "published": "2026-11-08T17:45:09+00:00"
+     "title": "TFF Başkanlığına aday olacak mı? Şenol Güneş cevapladı",
+     "link": "https://www.cnnturk.com/spor/futbol/tff-baskanligina-aday-olacak-mi-senol-gunes-cevapladi-3491140",
+     "published": "2026-11-09T22:38:54+00:00"
     }
    ]
   }
