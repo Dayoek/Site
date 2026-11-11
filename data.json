@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-10T18:02:19+00:00",
+ "generated_at": "2026-11-11T17:58:00+00:00",
  "fund": {
   "isin": "IE00BFPM9N11",
   "name": "Vanguard Global Stock Index Fund",
@@ -7,8 +7,8 @@
   "abn_code": "95522",
   "currency": "EUR",
   "stale": false,
-  "nav": 455.38,
-  "as_of": "2026-11-09",
+  "nav": 455.9,
+  "as_of": "2026-11-10",
   "history": [
    {
     "date": "2026-07-06",
@@ -373,24 +373,28 @@
    {
     "date": "2026-11-09",
     "nav": 455.38
+   },
+   {
+    "date": "2026-11-10",
+    "nav": 455.9
    }
   ],
   "performance": {
-   "ytd": 15.94,
-   "1w": 0.07,
-   "1m": -2.3,
-   "3m": 0.12,
-   "6m": 7.7,
-   "1y": 17.2,
-   "3y": 18.79,
-   "5y": 10.79
+   "ytd": 16.07,
+   "1w": 0.04,
+   "1m": -2.19,
+   "3m": 0.23,
+   "6m": 7.83,
+   "1y": 15.47,
+   "3y": 18.36,
+   "5y": 10.87
   },
-  "previous_nav": 447.34,
-  "change": 8.04,
-  "change_pct": 1.8
+  "previous_nav": 455.38,
+  "change": 0.52,
+  "change_pct": 0.11
  },
  "gold": {
-  "stale": false,
+  "stale": true,
   "usd_per_oz": 4018.5,
   "eur_usd": 0.892449,
   "eur_per_gram": 115.3,
@@ -657,34 +661,34 @@
    "feed": "https://tweakers.net/feeds/nieuws.xml",
    "items": [
     {
-     "title": "Samsung integreert Google Foto's in zijn Galerij-app voor back-ups in Drive",
-     "link": "https://tweakers.net/nieuws/254368/samsung-integreert-google-fotos-in-zijn-galerij-app-voor-back-ups-in-drive.html",
-     "published": "2026-11-10T17:01:10+00:00"
+     "title": "Nederlandse onderzoekers waarschuwen voor gaten in bijgewerkte koelsystemen",
+     "link": "https://tweakers.net/nieuws/254420/nederlandse-onderzoekers-waarschuwen-voor-gaten-in-bijgewerkte-koelsystemen.html",
+     "published": "2026-11-11T16:55:45+00:00"
     },
     {
-     "title": "AMD zet AI in om serverram deels te vervangen door goedkoper flashgeheugen",
-     "link": "https://tweakers.net/nieuws/254226/amd-zet-ai-in-om-serverram-deels-te-vervangen-door-goedkoper-flashgeheugen.html",
-     "published": "2026-11-10T17:00:00+00:00"
+     "title": "Gerucht: Nvidia stelt 24GB-variant van RTX 5080 voor onbepaalde tijd uit",
+     "link": "https://tweakers.net/nieuws/254418/gerucht-nvidia-stelt-24gb-variant-van-rtx-5080-voor-onbepaalde-tijd-uit.html",
+     "published": "2026-11-11T16:25:44+00:00"
     },
     {
-     "title": "Rockstar mikt met GTA VI op 30fps op consoles, PS5 Pro krijgt schaduwraytracing",
-     "link": "https://tweakers.net/nieuws/254366/rockstar-mikt-met-gta-vi-op-30fps-op-consoles-ps5-pro-krijgt-schaduwraytracing.html",
-     "published": "2026-11-10T16:29:05+00:00"
+     "title": "Modder brengt tool uit om ssd-bug in AMD-drivers op te lossen",
+     "link": "https://tweakers.net/nieuws/254408/modder-brengt-tool-uit-om-ssd-bug-in-amd-drivers-op-te-lossen.html",
+     "published": "2026-11-11T16:02:00+00:00"
     },
     {
-     "title": "NZXT voorziet H5- en H7-behuizingen van gebogen glas vanaf 89,90 euro",
-     "link": "https://tweakers.net/nieuws/254354/nzxt-voorziet-h5-en-h7-behuizingen-van-gebogen-glas-vanaf-89-komma-90-euro.html",
-     "published": "2026-11-10T16:00:00+00:00"
+     "title": "Meer Windows 11-gebruikers krijgen geheugenbescherming die games kan vertragen",
+     "link": "https://tweakers.net/nieuws/254412/meer-windows-11-gebruikers-krijgen-geheugenbescherming-die-games-kan-vertragen.html",
+     "published": "2026-11-11T15:54:37+00:00"
     },
     {
-     "title": "NZXT's nieuwe Kraken-aio-koelers krijgen stillere pomp en singleframeventilator",
-     "link": "https://tweakers.net/nieuws/254358/nzxts-nieuwe-kraken-aio-koelers-krijgen-stillere-pomp-en-singleframeventilator.html",
-     "published": "2026-11-10T16:00:00+00:00"
+     "title": "Combinatie van ssd en hdd keert terug met Seagate FireCuda Forge van 8TB",
+     "link": "https://tweakers.net/nieuws/254372/combinatie-van-ssd-en-hdd-keert-terug-met-seagate-firecuda-forge-van-8tb.html",
+     "published": "2026-11-11T15:49:48+00:00"
     },
     {
-     "title": "VanMoof voegt navigatie zonder tracking en advertenties toe aan app",
-     "link": "https://tweakers.net/nieuws/254362/vanmoof-voegt-navigatie-zonder-tracking-en-advertenties-toe-aan-app.html",
-     "published": "2026-11-10T15:23:39+00:00"
+     "title": "Overheid werkt aan NL Wallet zonder afhankelijkheid van Apple of Google",
+     "link": "https://tweakers.net/nieuws/254404/overheid-werkt-aan-nl-wallet-zonder-afhankelijkheid-van-apple-of-google.html",
+     "published": "2026-11-11T14:24:26+00:00"
     }
    ]
   },
@@ -694,34 +698,34 @@
    "feed": "https://feeds.nos.nl/nosnieuwsalgemeen",
    "items": [
     {
-     "title": "Oproep tot ingrijpen tegen Franse zender CNews krijgt geen politiek vervolg",
-     "link": "https://nos.nl/l/2638915",
-     "published": "2026-11-10T17:55:46+00:00"
+     "title": "El Salvador bestookt vermoedelijk bendehoofdkwartier in Haïti, premier bedankt Bukele",
+     "link": "https://nos.nl/l/2639052",
+     "published": "2026-11-11T17:52:03+00:00"
     },
     {
-     "title": "Eerste gesprekken over einde aan oorlog in Oekraïne 'productief', aldus VS",
-     "link": "https://nos.nl/l/2638905",
-     "published": "2026-11-10T17:33:33+00:00"
+     "title": "Aardverschuivingen en overstromingen in Portugal door Charles, vluchten geschrapt",
+     "link": "https://nos.nl/l/2639051",
+     "published": "2026-11-11T17:42:08+00:00"
     },
     {
-     "title": "Bijna 30 influencers krijgen tik op de vingers voor illegale gezondheidsclaims",
-     "link": "https://nos.nl/l/2638904",
-     "published": "2026-11-10T17:33:32+00:00"
+     "title": "Wereldleiders eenstemmig bezorgd, maar conflicten drukken stempel op klimaattop",
+     "link": "https://nos.nl/l/2639050",
+     "published": "2026-11-11T17:37:17+00:00"
     },
     {
-     "title": "Vogelgriep vastgesteld bij bedrijf in Hierden, 70.000 eenden geruimd",
-     "link": "https://nos.nl/l/2638902",
-     "published": "2026-11-10T17:21:45+00:00"
+     "title": "Vrouw (58) overleden na instorten tuinmuur in Vlaardingen",
+     "link": "https://nos.nl/l/2639040",
+     "published": "2026-11-11T16:52:42+00:00"
     },
     {
-     "title": "Mantelzorg bij dementie is zwaar: 'Je draagt heel veel alleen'",
-     "link": "https://nos.nl/l/2638901",
-     "published": "2026-11-10T17:16:05+00:00"
+     "title": "Hoogspanning in coalitie over belastingplan: 'dit geeft krassen'",
+     "link": "https://nos.nl/l/2639038",
+     "published": "2026-11-11T16:33:28+00:00"
     },
     {
-     "title": "Oproep om gegevens van Q-koorts- en postcovidpatiënten te bewaren",
-     "link": "https://nos.nl/l/2638900",
-     "published": "2026-11-10T17:04:44+00:00"
+     "title": "Kogelwerende koffertjes en beveiligers op ski's: zo bescherm je de koning",
+     "link": "https://nos.nl/l/2639030",
+     "published": "2026-11-11T15:46:09+00:00"
     }
    ]
   },
@@ -731,34 +735,34 @@
    "feed": "https://www.rtlnieuws.nl/rss.xml",
    "items": [
     {
-     "title": "Kan Ozempic je zicht beschadigen? FDA wil waarschuwing op bijsluiter",
-     "link": "https://www.rtl.nl/nieuws/buitenland/artikel/5664346/ozempic-zicht-fda-bijsluiter",
-     "published": "2026-11-10T17:59:10+00:00"
+     "title": "Producenten All Stars-vervolg 'overspoeld' met blije reacties",
+     "link": "https://www.rtl.nl/boulevard/artikel/5664597/producenten-all-stars-vervolg-overspoeld-met-blije-reacties",
+     "published": "2026-11-11T17:46:36+00:00"
     },
     {
-     "title": "Beter Leven-keurmerk aangescherpt na beelden mishandeling varkens",
-     "link": "https://www.rtl.nl/nieuws/binnenland/artikel/5664364/beter-leven-keurmerk-aangepast-beelden-mishandeling-varkens",
-     "published": "2026-11-10T17:42:00+00:00"
+     "title": "Monica Geuze keert niet terug als presentator De Bachelorette",
+     "link": "https://www.rtl.nl/boulevard/artikel/5664578/monica-geuze-de-bachelorette-stopt-presentator",
+     "published": "2026-11-11T17:45:00+00:00"
     },
     {
-     "title": "Nieuwe assistent van Sinterklaas blijft spoorloos in Sinterklaasjournaal",
-     "link": "https://www.rtl.nl/boulevard/artikel/5664362/sinterklaasjournaal-houdt-kijkers-spanning-over-nieuwe-sint",
-     "published": "2026-11-10T17:18:57+00:00"
+     "title": "Weer geen Sint in journaal, maar Jan Slagter mengt zich in zoektocht",
+     "link": "https://www.rtl.nl/boulevard/artikel/5664592/weer-geen-sint-journaal-maar-wel-jan-slagter",
+     "published": "2026-11-11T17:21:06+00:00"
     },
     {
-     "title": "EenVandaag-gezicht Lammert de Bruin vertrekt na ruim 25 jaar bij AVROTROS",
-     "link": "https://www.rtl.nl/boulevard/artikel/5664360/eenvandaag-journalist-lammert-de-bruin-vertrekt-bij-avrotros",
-     "published": "2026-11-10T16:58:14+00:00"
+     "title": "Is het Sinterklaasjournaal te spannend? Deze psychologen zijn het niet eens",
+     "link": "https://www.rtl.nl/nieuws/binnenland/artikel/5664486/sinterklaasjournaal-te-spannend-wat-spanning-juist-gezond",
+     "published": "2026-11-11T17:16:07+00:00"
     },
     {
-     "title": "Sarina Wiegman haalt na tien maanden eindelijk koninklijk lintje op bij prins William",
-     "link": "https://www.rtl.nl/boulevard/artikel/5664359/sarina-wiegman-haalt-eindelijk-lintje-op-bij-prins-william",
-     "published": "2026-11-10T16:46:42+00:00"
+     "title": "GTA 6-koorts: gamers maken agenda leeg voor langverwachte game",
+     "link": "https://www.rtl.nl/nieuws/rtl-nieuwspanel/artikel/5664565/gta-6-gamers-nemen-vrij-voor-nieuwe-game",
+     "published": "2026-11-11T17:11:11+00:00"
     },
     {
-     "title": "KNVB en Vitesse willen 'onder begeleiding' licentiezaak oplossen",
-     "link": "https://www.rtl.nl/nieuws/sport/artikel/5664356/knvb-en-vitesse-willen-onder-begeleiding-licentiezaak-oplossen",
-     "published": "2026-11-10T16:44:17+00:00"
+     "title": "Oud-voorzitter Blatter: Infantino heeft psychische hulp nodig",
+     "link": "https://www.rtl.nl/nieuws/sport/artikel/5664590/oud-voorzitter-blatter-infantino-heeft-psychische-hulp-nodig",
+     "published": "2026-11-11T17:01:37+00:00"
     }
    ]
   },
@@ -768,34 +772,34 @@
    "feed": "https://www.security.nl/rss/headlines.xml",
    "items": [
     {
-     "title": "Kritiek Synology-lek geeft aanvaller toegang tot bestanden op NAS-systeem",
-     "link": "https://www.security.nl/posting/961107/Kritiek+Synology-lek+geeft+aanvaller+toegang+tot+bestanden+op+NAS-systeem?channel=rss",
-     "published": "2026-11-10T15:55:04+00:00"
+     "title": "'Danfoss-koelsystemen via nieuwe kwetsbaarheden volledig over te nemen'",
+     "link": "https://www.security.nl/posting/961277/%27Danfoss-koelsystemen+via+nieuwe+kwetsbaarheden+volledig+over+te+nemen%27?channel=rss",
+     "published": "2026-11-11T15:59:00+00:00"
     },
     {
-     "title": "Belgische overheid waarschuwt voor misbruik van inloggen via sms",
-     "link": "https://www.security.nl/posting/961099/Belgische+overheid+waarschuwt+voor+misbruik+van+inloggen+via+sms?channel=rss",
-     "published": "2026-11-10T15:17:30+00:00"
+     "title": "ASN-klant krijgt 33.000 euro schade door bankhelpdeskfraude niet vergoed",
+     "link": "https://www.security.nl/posting/961266/ASN-klant+krijgt+33_000+euro+schade+door+bankhelpdeskfraude+niet+vergoed?channel=rss",
+     "published": "2026-11-11T15:08:46+00:00"
     },
     {
-     "title": "Firefox biedt tot 31 januari onbeperkt dataverkeer via ingebouwde vpn",
-     "link": "https://www.security.nl/posting/961082/Firefox+biedt+tot+31+januari+onbeperkt+dataverkeer+via+ingebouwde+vpn?channel=rss",
-     "published": "2026-11-10T14:20:49+00:00"
+     "title": "Gemeente Utrecht onderzoekt verbod op dragen van camerabrillen",
+     "link": "https://www.security.nl/posting/961248/Gemeente+Utrecht+onderzoekt+verbod+op+dragen+van+camerabrillen?channel=rss",
+     "published": "2026-11-11T14:07:21+00:00"
     },
     {
-     "title": "Kabinet wil biometrische scan bij uitgifte identiteitsbewijs wettelijk vastleggen",
-     "link": "https://www.security.nl/posting/961075/Kabinet+wil+biometrische+scan+bij+uitgifte+identiteitsbewijs+wettelijk+vastleggen?channel=rss",
-     "published": "2026-11-10T13:37:13+00:00"
+     "title": "'Storing Rijksoverheid.nl en OM.nl door menselijke fout met update'",
+     "link": "https://www.security.nl/posting/961234/%27Storing+Rijksoverheid_nl+en+OM_nl+door+menselijke+fout+met+update%27?channel=rss",
+     "published": "2026-11-11T13:09:20+00:00"
     },
     {
-     "title": "N-able haalt clouddienst wegens 'Able2Shell' offline, eerste aanvallen gemeld",
-     "link": "https://www.security.nl/posting/961066/N-able+haalt+clouddienst+wegens+%27Able2Shell%27+offline%2C+eerste+aanvallen+gemeld?channel=rss",
-     "published": "2026-11-10T13:05:00+00:00"
+     "title": "N-able komt met hotfix voor aangevallen kwetsbaarheden in N-central",
+     "link": "https://www.security.nl/posting/961231/N-able+komt+met+hotfix+voor+aangevallen+kwetsbaarheden+in+N-central?channel=rss",
+     "published": "2026-11-11T12:52:50+00:00"
     },
     {
-     "title": "OM verdenkt man van oplichting bank met behulp van deepfakes",
-     "link": "https://www.security.nl/posting/961056/OM+verdenkt+man+van+oplichting+bank+met+behulp+van+deepfakes?channel=rss",
-     "published": "2026-11-10T12:15:36+00:00"
+     "title": "Firefox laat gebruikers meer op elkaar lijken om fingerprinting tegen te gaan",
+     "link": "https://www.security.nl/posting/961195/Firefox+laat+gebruikers+meer+op+elkaar+lijken+om+fingerprinting+tegen+te+gaan?channel=rss",
+     "published": "2026-11-11T11:33:15+00:00"
     }
    ]
   },
@@ -805,24 +809,9 @@
    "feed": null,
    "items": [
     {
-     "title": "College basketball’s rules are being rewritten in real time. Coaches are scrambling to keep up",
-     "link": "https://www.cnn.com/2026/11/10/sport/college-basketball-chaos",
-     "published": "2026-11-10T00:00:00+00:00"
-    },
-    {
-     "title": "Ohio State fraternity placed on interim suspension after video shows two people on fire",
-     "link": "https://www.cnn.com/2026/11/09/us/ohio-state-fraternity-sigma-alpha-epsilon-fire-fight",
-     "published": "2026-11-09T00:00:00+00:00"
-    },
-    {
-     "title": "British celebrity David Walliams accused of sexual misconduct after losing legal battle to block reporting of claims",
-     "link": "https://www.cnn.com/2026/11/10/entertainment/david-walliams-celebrity-injunction-sexual-misconduct-intl",
-     "published": "2026-11-10T00:00:00+00:00"
-    },
-    {
-     "title": "Ukraine peace talks restart after 9 months. What makes them different this time?",
-     "link": "https://www.cnn.com/2026/11/09/europe/russia-ukraine-us-peace-talks-preview-intl",
-     "published": "2026-11-09T00:00:00+00:00"
+     "title": "Russian ambassador to US dies suddenly, foreign ministry says",
+     "link": "https://www.cnn.com/2026/11/11/europe/russian-ambassador-to-us-dies-intl",
+     "published": "2026-11-11T00:00:00+00:00"
     },
     {
      "title": "A gay sex ban is overturned in Trinidad and Tobago. What the ruling says about LGBTQ+ rights and post-colonial identity",
@@ -830,8 +819,23 @@
      "published": "2026-11-10T00:00:00+00:00"
     },
     {
-     "title": "US evacuates aircraft from British military base after threat from Iran",
-     "link": "https://www.cnn.com/2026/11/10/world/us-moves-aircraft-british-military-base-intl",
+     "title": "CNN analysis uncovers construction flaws in public housing towers that collapsed during Venezuela quakes",
+     "link": "https://www.cnn.com/2026/11/08/americas/construction-flaws-venezuela-quakes-investigation-intl-latam",
+     "published": "2026-11-08T00:00:00+00:00"
+    },
+    {
+     "title": "Gavin Newsom won the argument on California’s proposed wealth tax. He could still face a fight over it",
+     "link": "https://www.cnn.com/2026/11/11/politics/gavin-newsom-california-wealth-tax",
+     "published": "2026-11-11T00:00:00+00:00"
+    },
+    {
+     "title": "Suspected bomb threat hoaxes prompt evacuation of Italian schools, alarm in UK and Ireland",
+     "link": "https://www.cnn.com/2026/11/11/europe/italy-europe-bomb-threat-intl",
+     "published": "2026-11-11T00:00:00+00:00"
+    },
+    {
+     "title": "Man accused of raping three women in New York’s Central Park is arrested in Miami Beach",
+     "link": "https://www.cnn.com/2026/11/10/us/central-park-new-york-city-rape-arrest-miami",
      "published": "2026-11-10T00:00:00+00:00"
     }
    ],
@@ -843,34 +847,34 @@
    "feed": "https://www.cnnturk.com/feed/rss/all/news",
    "items": [
     {
-     "title": "İstanbul yolunda zincirleme kaza! Makaslayan tıra 2 kamyon çarptı",
-     "link": "https://www.cnnturk.com/turkiye/istanbul-yolunda-zincirleme-kaza-makaslayan-tira-2-kamyon-carpti-3491685",
-     "published": "2026-11-10T20:44:33+00:00"
+     "title": "Ülke geneli ortak yazılılar başladı",
+     "link": "https://www.cnnturk.com/video/egitim/ulke-geneli-ortak-yazililar-basladi-3492099",
+     "published": "2026-11-11T20:41:31+00:00"
     },
     {
-     "title": "Meclis Başkanı Kurtulmuş’tan terörsüz Türkiye turları",
-     "link": "https://www.cnnturk.com/video/turkiye/meclis-baskani-kurtulmustan-terorsuz-turkiye-turlari-3491684",
-     "published": "2026-11-10T20:43:38+00:00"
+     "title": "Sanayi ve Teknoloji Bakanı Mehmet Fatih Kacır CNN TÜRK'te… COP31 Zirvesi: İklim için adımlar ne?",
+     "link": "https://www.cnnturk.com/video/turkiye/sanayi-ve-teknoloji-bakani-mehmet-fatih-kacir-cnn-turkte-cop31-zirvesi-iklim-icin-adimlar-ne-3492097",
+     "published": "2026-11-11T20:36:46+00:00"
     },
     {
-     "title": "Bayern Münih, Beşiktaş’ın eski kalecisini istiyor",
-     "link": "https://www.cnnturk.com/spor/futbol/bayern-munih-besiktasin-eski-kalecisini-istiyor-3491680",
-     "published": "2026-11-10T20:27:48+00:00"
+     "title": "ÇILGIN SAYISAL LOTO SONUÇLARI 11 KASIM 2026 | Çılgın Sayısal Loto sonuçları açıklandı mı, saat kaçta açıklanır? 220,7 milyon TL büyük ikramiye",
+     "link": "https://www.cnnturk.com/ekonomi/cilgin-sayisal-loto-sonuclari-11-kasim-2026-cilgin-sayisal-loto-sonuclari-aciklandi-mi-saat-kacta-aciklanir-220-7-milyon-tl-buyuk-3492086",
+     "published": "2026-11-11T20:28:48+00:00"
     },
     {
-     "title": "Fenerbahçe otobüsüne saldırıda yeni gelişme! 72 görüşmelik iz!",
-     "link": "https://www.cnnturk.com/turkiye/fenerbahce-otobusune-saldirida-yeni-gelisme-72-gorusmelik-iz-3491683",
-     "published": "2026-11-10T20:11:14+00:00"
+     "title": "İletişim Başkanı Burhanettin Duran: Türkiye diplomasinin merkezinde olduğunu dünyaya gösterdi",
+     "link": "https://www.cnnturk.com/turkiye/iletisim-baskani-burhanettin-duran-turkiye-diplomasinin-merkezinde-oldugunu-dunyaya-gosterdi-3492096",
+     "published": "2026-11-11T20:20:23+00:00"
     },
     {
-     "title": "Netanyahu için koltuk alarmı! \"Panik içinde yaşıyor\"",
-     "link": "https://www.cnnturk.com/turkiye/netanyahu-icin-koltuk-alarmi-panik-icinde-yasiyor-3491682",
-     "published": "2026-11-10T20:03:28+00:00"
+     "title": "SON DAKİKA | 11 KASIM 2026 ŞANS TOPU SONUÇLARI AÇIKLANDI! Şans Topu sonuçları nasıl öğrenilir? 3.285.771 TL büyük ikramiye",
+     "link": "https://www.cnnturk.com/ekonomi/sans-topu-sonuclari-11-kasim-2026-sans-topu-sonuclari-aciklandi-mi-saat-kacta-aciklanir-1-7-milyon-tl-buyuk-ikramiye-3492085",
+     "published": "2026-11-11T20:07:02+00:00"
     },
     {
-     "title": "Alanyaspor’da Joao Pereira dönemi sona erdi",
-     "link": "https://www.cnnturk.com/spor/futbol/alanyasporda-joao-pereira-donemi-sona-erdi-3491681",
-     "published": "2026-11-10T19:52:02+00:00"
+     "title": "8 Uluslararası Finans Kuruluşu Destek Mektubu İmzaladı! Enerji ve Tabii Kaynaklar Bakanı Bayraktar'dan açıklama",
+     "link": "https://www.cnnturk.com/ekonomi/8-uluslararasi-finans-kurulusu-destek-mektubu-imzaladi-enerji-ve-tabii-kaynaklar-bakani-bayraktardan-aciklama-3492095",
+     "published": "2026-11-11T19:58:29+00:00"
     }
    ]
   }
