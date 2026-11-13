@@ -29,6 +29,8 @@ jobs:
           python-version: "3.12"
 
       - name: Fetch sources
+        env:
+          RAWG_API_KEY: ${{ secrets.RAWG_API_KEY }}
         run: python3 scripts/fetch_data.py
 
       - name: Commit data.json if it changed
