@@ -605,9 +605,10 @@
     },
     {
       name: "Mardin",
-      text: "Het Geelbruine balkon over de Mesopotamische vlakte: oude soeken, Syrisch-orthodoxe kloosters zoals Deyrulzafaran en zoveel zorgvuldig bewaarde stenen vakwerk dat je ogen tekort komen.",
-      img: "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Mardin_Airport_with_the_old_city_of_Mardin_in_the_background.jpg/1920px-Mardin_Airport_with_the_old_city_of_Mardin_in_the_background.jpg",
-      file: "https://commons.wikimedia.org/wiki/File:Mardin_Airport_with_the_old_city_of_Mardin_in_the_background.jpg",
+      text: "Het goudbruine balkon boven de Mesopotamische vlakte: kronkelige steegjes vol stenen herenhuizen, Syrisch-orthodoxe kloosters zoals Deyrulzafaran en daktuinen met uitzicht tot ver over de vlakte.",
+      img: "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Scenic_Terrace_View_of_Mardin_City.jpg/1920px-Scenic_Terrace_View_of_Mardin_City.jpg",
+      pos: "50% 42%",
+      file: "https://commons.wikimedia.org/wiki/File:Scenic_Terrace_View_of_Mardin_City.jpg",
       wiki: "https://nl.wikipedia.org/wiki/Mardin",
     },
     {
@@ -623,6 +624,7 @@
     const d = DESTINATIONS[new Date().getMonth()] || DESTINATIONS[0];
     $("vac-img").src = d.img;
     $("vac-img").alt = d.name;
+    $("vac-img").style.objectPosition = d.pos || "50% 50%";
     $("vac-img-link").href = d.wiki;
     $("vac-title").textContent = d.name;
     $("vac-title").href = d.wiki;
