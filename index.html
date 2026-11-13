@@ -89,6 +89,74 @@
 
   /* ---------- tiles ---------- */
 
+  /* ---------- hero: vakantieplek van de maand ---------- */
+
+  .hero { margin-bottom: 1rem; }
+
+  .hero-card {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    overflow: hidden;
+  }
+
+  .hero-media { position: relative; height: 360px; background: var(--panel-2); }
+
+  .hero-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .hero-media::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(10, 14, 22, 0) 40%, rgba(10, 14, 22, .82));
+    pointer-events: none;
+  }
+
+  .hero-overlay {
+    position: absolute;
+    left: 1.35rem;
+    right: 1.35rem;
+    bottom: 1rem;
+    z-index: 1;
+  }
+
+  .hero-overlay h2 {
+    margin: .15rem 0 0;
+    font-size: 1.7rem;
+    letter-spacing: .01em;
+  }
+
+  .hero-overlay h2 a { color: #fff; text-decoration: none; }
+  .hero-overlay h2 a:hover { color: var(--gold); }
+
+  .hero-kicker {
+    color: var(--gold);
+    font-size: .7rem;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  .hero-body { padding: 1rem 1.35rem 1.15rem; }
+
+  .hero-text { margin: 0; color: #cdd6e2; font-size: .92rem; line-height: 1.55; }
+
+  .hero-credit { margin: .55rem 0 0; font-size: .72rem; color: var(--dim); }
+  .hero-credit a { color: var(--dim); text-decoration: none; }
+  .hero-credit a:hover { color: var(--gold); }
+
+  @media (max-width: 640px) {
+    .hero-media { height: 240px; }
+    .hero-overlay h2 { font-size: 1.3rem; }
+  }
+
+  /* ---------- tiles ---------- */
+
   .tiles {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -345,6 +413,24 @@
   </header>
 
   <main>
+    <section class="hero" aria-label="Vakantieplek van de maand">
+      <article class="hero-card">
+        <div class="hero-media">
+          <a id="vac-img-link" href="#" target="_blank" rel="noopener noreferrer">
+            <img id="vac-img" src="" alt="" loading="lazy">
+          </a>
+          <div class="hero-overlay">
+            <p class="hero-kicker">Vakantieplek van deze maand</p>
+            <h2><a id="vac-title" href="#" target="_blank" rel="noopener noreferrer">—</a></h2>
+          </div>
+        </div>
+        <div class="hero-body">
+          <p class="hero-text" id="vac-text"></p>
+          <p class="hero-credit"><a id="vac-credit" href="#" target="_blank" rel="noopener noreferrer">foto: Wikimedia Commons</a></p>
+        </div>
+      </article>
+    </section>
+
     <section class="tiles" aria-label="Koersen">
 
       <article class="tile">
@@ -443,6 +529,106 @@
   const num4 = new Intl.NumberFormat("nl-NL", { minimumFractionDigits: 4, maximumFractionDigits: 4 });
 
   const $ = (id) => document.getElementById(id);
+
+  /* ---------- vakantieplek van de maand ---------- */
+
+  const DESTINATIONS = [
+    {
+      name: "Istanbul",
+      text: "Aya Sofia, de Bosporus en de Grand Bazaar: Istanbul combineert twee continenten in één stad. Dwaal door Sultanahmet, eet meze in Kadıköy en neem de ferry voor het mooiste uitzicht van de skyline.",
+      img: "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/Hagia_Sophia_Mars_2013.jpg/1920px-Hagia_Sophia_Mars_2013.jpg",
+      file: "https://commons.wikimedia.org/wiki/File:Hagia_Sophia_Mars_2013.jpg",
+      wiki: "https://nl.wikipedia.org/wiki/Istanbul",
+    },
+    {
+      name: "Kapadokya",
+      text: "Rijs met de luchtballon boven de sprookjesachtige rotsformaties van Göreme, slaap in een grottenhotel en wandel door de valleien vol oude ondergrondse steden.",
+      img: "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Cappadocia_Aerial_View_Landscape.jpg/1920px-Cappadocia_Aerial_View_Landscape.jpg",
+      file: "https://commons.wikimedia.org/wiki/File:Cappadocia_Aerial_View_Landscape.jpg",
+      wiki: "https://nl.wikipedia.org/wiki/Cappadoci%C3%AB",
+    },
+    {
+      name: "Pamukkale",
+      text: "De witte kalkterrassen en het antieke Hierapolis maken Pamukkale een natuurwonder. Loop op blote voeten door de warme bronnen en zwem in de antieke Cleopatra-pool.",
+      img: "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/TR_Pamukkale_White_Terraces_asv2020-02_img16.jpg/1920px-TR_Pamukkale_White_Terraces_asv2020-02_img16.jpg",
+      file: "https://commons.wikimedia.org/wiki/File:TR_Pamukkale_White_Terraces_asv2020-02_img16.jpg",
+      wiki: "https://nl.wikipedia.org/wiki/Pamukkale",
+    },
+    {
+      name: "Efes",
+      text: "Een van de best bewaarde antieke steden van de Middellandse Zee: de Bibliotheek van Celsus, het grote theater en de marmeren straten. Combineer met de wijnhuizen van Şirince in de heuvels.",
+      img: "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Ephesus_Celsus_Library_Fa%C3%A7ade.jpg/1920px-Ephesus_Celsus_Library_Fa%C3%A7ade.jpg",
+      file: "https://commons.wikimedia.org/wiki/File:Ephesus_Celsus_Library_Fa%C3%A7ade.jpg",
+      wiki: "https://nl.wikipedia.org/wiki/Efeze",
+    },
+    {
+      name: "Antalya",
+      text: "De oude havenwijk Kaleiçi, Romeinse poorten en watervallen zoals Düden: Antalya is cultuur en strand in één. Perfecte uitvalsbasis voor dagjes naar Termessos of de kust.",
+      img: "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Antalya_kalei%C3%A7i_2.jpg/1920px-Antalya_kalei%C3%A7i_2.jpg",
+      file: "https://commons.wikimedia.org/wiki/File:Antalya_kalei%C3%A7i_2.jpg",
+      wiki: "https://nl.wikipedia.org/wiki/Antalya_(stad)",
+    },
+    {
+      name: "Kaş",
+      text: "Gezellig kuststadje tussen rotsen en turquoise zee. Duik met schildpadden, kyak langs de zonnegezonken Lycische stad Kekova en sluit de dag af op een terras aan het Kaputaş-strand.",
+      img: "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Kaputas_Beach.JPG/1920px-Kaputas_Beach.JPG",
+      file: "https://commons.wikimedia.org/wiki/File:Kaputas_Beach.JPG",
+      wiki: "https://nl.wikipedia.org/wiki/Ka%C5%9F",
+    },
+    {
+      name: "Ölüdeniz",
+      text: "De blauwe lagune van Ölüdeniz is een van de meest gefotografeerde stranden van Turkije. Paraglide van de Babadağ (bijna 2.000 m recht boven de zee) of peddel rustig door het natuurgebied.",
+      img: "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Oludeniz.jpg/1920px-Oludeniz.jpg",
+      file: "https://commons.wikimedia.org/wiki/File:Oludeniz.jpg",
+      wiki: "https://nl.wikipedia.org/wiki/%C3%96l%C3%BCdeniz",
+    },
+    {
+      name: "Alaçatı",
+      text: "Windsurfen paradijs met steegjes vol blauwschilderije huizen, boetiekhotels en bloementerrassen. Geniet van de zaterdagmarkt en de wijngaarden van het schiereiland.",
+      img: "https://upload.wikimedia.org/wikipedia/commons/d/d8/Alacati_Streets_-_2020.jpg",
+      file: "https://commons.wikimedia.org/wiki/File:Alacati_Streets_-_2020.jpg",
+      wiki: "https://nl.wikipedia.org/wiki/Ala%C3%A7at%C4%B1",
+    },
+    {
+      name: "Bodrum",
+      text: "Witgekalkte huizen, het kruisridderkasteel met onderwatermuseum en levendige havenbars. Vanaf hier vertrekken blauwe reizen (mavi yolculuk) langs de baaien van de Egeïsche Zee.",
+      img: "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Bodrum_Castle_%282017%29.jpg/1920px-Bodrum_Castle_%282017%29.jpg",
+      file: "https://commons.wikimedia.org/wiki/File:Bodrum_Castle_(2017).jpg",
+      wiki: "https://nl.wikipedia.org/wiki/Bodrum",
+    },
+    {
+      name: "Safranbolu",
+      text: "Een compleet Ottomans stadje op de UNESCO-lijst: houten herenhuizen, smeedijzeren details en de beroemde lokum. Overnacht in een gerestaureerd konak en drink koffie in het oude caravanserai.",
+      img: "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Safranbolu_Old_Town_-_2014.10_-_panoramio.jpg/1920px-Safranbolu_Old_Town_-_2014.10_-_panoramio.jpg",
+      file: "https://commons.wikimedia.org/wiki/File:Safranbolu_Old_Town_-_2014.10_-_panoramio.jpg",
+      wiki: "https://nl.wikipedia.org/wiki/Safranbolu",
+    },
+    {
+      name: "Mardin",
+      text: "Het Geelbruine balkon over de Mesopotamische vlakte: oude soeken, Syrisch-orthodoxe kloosters zoals Deyrulzafaran en zoveel zorgvuldig bewaarde stenen vakwerk dat je ogen tekort komen.",
+      img: "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Mardin_Airport_with_the_old_city_of_Mardin_in_the_background.jpg/1920px-Mardin_Airport_with_the_old_city_of_Mardin_in_the_background.jpg",
+      file: "https://commons.wikimedia.org/wiki/File:Mardin_Airport_with_the_old_city_of_Mardin_in_the_background.jpg",
+      wiki: "https://nl.wikipedia.org/wiki/Mardin",
+    },
+    {
+      name: "Amasra",
+      text: "Het pareltje aan de Zwarte Zee: een Genuese burcht tussen twee baaien, dennenbossen en de beste visrestaurants van de kust. Rustig, groen en verrassend mooi buiten het hoogseizoen.",
+      img: "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Amasra%2C_Turkey%2C_Castle%2C_view_from_the_island.jpg/1920px-Amasra%2C_Turkey%2C_Castle%2C_view_from_the_island.jpg",
+      file: "https://commons.wikimedia.org/wiki/File:Amasra,_Turkey,_Castle,_view_from_the_island.jpg",
+      wiki: "https://nl.wikipedia.org/wiki/Amasra",
+    },
+  ];
+
+  function renderVacation() {
+    const d = DESTINATIONS[new Date().getMonth()] || DESTINATIONS[0];
+    $("vac-img").src = d.img;
+    $("vac-img").alt = d.name;
+    $("vac-img-link").href = d.wiki;
+    $("vac-title").textContent = d.name;
+    $("vac-title").href = d.wiki;
+    $("vac-text").textContent = d.text;
+    $("vac-credit").href = d.file;
+  }
 
   /* ---------- clock ---------- */
 
@@ -728,6 +914,8 @@
   }
 
   main();
+
+  renderVacation();
 })();
 </script>
 </body>
