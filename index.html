@@ -249,37 +249,25 @@
 
   .card-head a:hover { color: var(--gold); }
 
-  ul.items { list-style: none; margin: 0; padding: 0; display: grid; gap: .1rem; }
+  ul.links { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: .15rem; }
 
-  ul.items li { min-width: 0; }
-
-  ul.items a {
+  ul.links a {
     display: block;
     padding: .42rem .5rem .42rem .55rem;
-    margin-left: -.5rem;
     border-left: 2px solid transparent;
     border-radius: 0 6px 6px 0;
     color: #cdd6e2;
     text-decoration: none;
     font-size: .86rem;
-    line-height: 1.42;
     transition: background .13s, border-color .13s, color .13s;
   }
 
-  ul.items a:hover,
-  ul.items a:focus-visible {
+  ul.links a:hover,
+  ul.links a:focus-visible {
     background: rgba(255, 255, 255, .04);
     border-left-color: var(--gold);
     color: #fff;
     outline: none;
-  }
-
-  ul.items .meta {
-    display: block;
-    color: var(--dim);
-    font-size: .7rem;
-    margin-top: .14rem;
-    font-variant-numeric: tabular-nums;
   }
 
   .empty { color: var(--dim); font-size: .82rem; padding: .5rem 0; }
@@ -353,13 +341,26 @@
     </section>
 
     <section class="news" id="news" aria-label="Nieuws">
-      <p class="empty skeleton">Nieuws laden…</p>
+      <article class="card">
+        <div class="card-head">
+          <span class="dot"></span>
+          <h2>Nieuwsbronnen</h2>
+        </div>
+        <ul class="links">
+          <li><a href="https://tweakers.net" target="_blank" rel="noopener noreferrer">Tweakers</a></li>
+          <li><a href="https://nos.nl" target="_blank" rel="noopener noreferrer">NOS</a></li>
+          <li><a href="https://www.rtlnieuws.nl" target="_blank" rel="noopener noreferrer">RTL Nieuws</a></li>
+          <li><a href="https://www.security.nl" target="_blank" rel="noopener noreferrer">Security.NL</a></li>
+          <li><a href="https://www.cnn.com" target="_blank" rel="noopener noreferrer">CNN</a></li>
+          <li><a href="https://www.cnnturk.com" target="_blank" rel="noopener noreferrer">CNN Türk</a></li>
+        </ul>
+      </article>
     </section>
   </main>
 
   <footer>
     <span id="updated">—</span>
-    <span>koersen en koppen van de genoemde bronnen</span>
+    <span>koersen van de genoemde bronnen</span>
   </footer>
 
 </div>
@@ -567,67 +568,6 @@
     );
   }
 
-  /* ---------- news ---------- */
-
-  function renderNews(news) {
-    const host = $("news");
-    host.innerHTML = "";
-
-    for (const entry of Object.values(news || {})) {
-      const card = document.createElement("article");
-      card.className = "card";
-
-      const head = document.createElement("div");
-      head.className = "card-head";
-      const dot = document.createElement("span");
-      dot.className = "dot";
-      const h2 = document.createElement("h2");
-      h2.textContent = entry.label || "";
-      head.append(dot, h2);
-
-      const siteLink = document.createElement("a");
-      siteLink.href = entry.site || "#";
-      siteLink.textContent = "site ↗";
-      siteLink.target = "_blank";
-      siteLink.rel = "noopener noreferrer";
-      head.append(siteLink);
-      card.append(head);
-
-      const items = entry.items || [];
-      if (!items.length) {
-        const p = document.createElement("p");
-        p.className = "empty";
-        p.textContent = "geen koppen opgehaald";
-        card.append(p);
-        host.append(card);
-        continue;
-      }
-
-      const ul = document.createElement("ul");
-      ul.className = "items";
-      for (const item of items) {
-        const li = document.createElement("li");
-        const a = document.createElement("a");
-        a.href = item.link;
-        a.target = "_blank";
-        a.rel = "noopener noreferrer";
-        a.textContent = item.title;
-
-        const rel = relative(item.published);
-        if (rel) {
-          const span = document.createElement("span");
-          span.className = "meta";
-          span.textContent = rel;
-          a.append(span);
-        }
-        li.append(a);
-        ul.append(li);
-      }
-      card.append(ul);
-      host.append(card);
-    }
-  }
-
   /* ---------- boot ---------- */
 
   async function main() {
@@ -638,14 +578,12 @@
       data = await res.json();
 
       loadFund(data.fund);
-      renderNews(data.news);
 
       const stamp = data.generated_at ? new Date(data.generated_at) : null;
       $("updated").textContent = stamp
         ? "data bijgewerkt " + stamp.toLocaleString("nl-NL", { day: "numeric", month: "short", hour: "2-digit", minute: "2-digit" })
         : "—";
     } catch (err) {
-      $("news").innerHTML = '<p class="empty">Kon data.json niet laden.</p>';
       $("updated").textContent = "data niet beschikbaar";
       const badge = $("fund-badge");
       badge.textContent = "fout";
