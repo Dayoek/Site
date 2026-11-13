@@ -6,6 +6,8 @@ Sources, all first-party and each requested exactly once per run:
     fund screener page. One GET, no retries. If it does not answer 200 the
     previous NAV is retained and flagged stale rather than hammering the site.
   * Gold spot and USD/EUR from their public APIs (see URLs below).
+  * Epic Games Store free-games promotions (Epic's own keyless storefront API).
+  * Upcoming game releases from RAWG (key via the RAWG_API_KEY actions secret).
 
 News sites are plain outbound links in index.html - no feeds are fetched.
 
@@ -16,11 +18,12 @@ Stdlib only, no dependencies.
 from __future__ import annotations
 
 import json
+import os
 import re
 import html
 import urllib.request
 import urllib.error
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -34,6 +37,11 @@ HISTORY_LIMIT = 180
 
 FUND_URL = "https://fondsen.abnamro.nl/fundscreener/nl/fund/IE00BFPM9N11"
 QUOTES_URL = "https://fondsen.abnamro.nl/fundscreener/nl/charts/quotes?fundId=1234"
+EPIC_FREE_URL = (
+    "https://store-site-backend-static.ak.epicgames.com/freeGamesPromotions"
+    "?locale=nl&country=NL&allowCountries=NL"
+)
+RAWG_URL_TEMPLATE = "https://api.rawg.io/api/games?dates={start},{end}&ordering=-added&page_size=6&key={key}"
 GOLD_URL = "https://api.gold-api.com/price/XAU"
 FX_URL = "https://open.er-api.com/v6/latest/USD"
 # NBP (Poland's central bank) publishes an official daily gold price per gram,
@@ -354,6 +362,96 @@ def build_fund(previous: dict) -> dict:
     return fund
 
 
+def build_freegames(previous: dict) -> dict:
+    """Epic's free-games promotions: current giveaways plus upcoming ones.
+
+    Free offers carry discountSetting.discountPercentage == 0.
+    """
+    prev_fg = previous.get("freegames") or {}
+    print(f"  freegames: GET {EPIC_FREE_URL}", flush=True)
+    status, raw = fetch(EPIC_FREE_URL)
+
+    current: list[dict] = []
+    upcoming: list[dict] = []
+    if status == 200 and raw:
+        try:
+            elements = json.loads(raw)["data"]["Catalog"]["searchStore"]["elements"]
+            for el in elements:
+                promos = el.get("promotions") or {}
+                for bucket, target in (
+                    (promos.get("promotionalOffers"), current),
+                    (promos.get("upcomingPromotionalOffers"), upcoming),
+                ):
+                    for wrap in bucket or []:
+                        for offer in wrap.get("promotionalOffers", []):
+                            setting = offer.get("discountSetting") or {}
+                            if setting.get("discountPercentage") != 0:
+                                continue
+                            slug = None
+                            for m in (el.get("catalogNs") or {}).get("mappings") or []:
+                                if m.get("pageType") == "productHome":
+                                    slug = m.get("pageSlug")
+                                    break
+                            entry = {
+                                "title": el.get("title") or "",
+                                "start": (offer.get("startDate") or "")[:10],
+                                "end": (offer.get("endDate") or "")[:10],
+                                "url": f"https://store.epicgames.com/nl/p/{slug}" if slug else "https://store.epicgames.com/nl/free-games",
+                            }
+                            if entry and entry not in target:
+                                target.append(entry)
+        except Exception as exc:  # noqa: BLE001
+            print(f"  ! freegames parse failed: {exc}", flush=True)
+    else:
+        print("  ! freegames fetch unusable", flush=True)
+
+    if not current and not upcoming:
+        current = prev_fg.get("current") or []
+        upcoming = prev_fg.get("upcoming") or []
+        print("  freegames: keeping previous data", flush=True)
+
+    print(f"  freegames: {len(current)} current, {len(upcoming)} upcoming", flush=True)
+    return {"current": current, "upcoming": upcoming}
+
+
+def build_releases(previous: dict) -> dict:
+    """Upcoming game releases from RAWG (next 30 days, most-added first)."""
+    prev_rel = previous.get("releases") or {}
+    key = os.environ.get("RAWG_API_KEY")
+    if not key:
+        print("  releases: no RAWG_API_KEY secret, keeping previous", flush=True)
+        return prev_rel
+
+    today = datetime.now(timezone.utc).date()
+    end = today + timedelta(days=30)
+    url = RAWG_URL_TEMPLATE.format(start=today.isoformat(), end=end.isoformat(), key=key)
+    print(f"  releases: GET rawg.io {today}..{end}", flush=True)
+    status, raw = fetch(url)
+
+    results: list[dict] = []
+    if status == 200 and raw:
+        try:
+            for g in json.loads(raw).get("results", []):
+                results.append(
+                    {
+                        "name": g.get("name") or "",
+                        "released": g.get("released") or "",
+                        "url": f"https://rawg.io/games/{g.get('slug')}",
+                    }
+                )
+        except Exception as exc:  # noqa: BLE001
+            print(f"  ! releases parse failed: {exc}", flush=True)
+    else:
+        print("  ! releases fetch unusable", flush=True)
+
+    if not results:
+        results = prev_rel.get("games") or []
+        print("  releases: keeping previous data", flush=True)
+
+    print(f"  releases: {len(results)} games", flush=True)
+    return {"games": results, "from": today.isoformat(), "to": end.isoformat()}
+
+
 def main() -> int:
     previous = load_previous()
     print("Fetching sources (one request each)...", flush=True)
@@ -362,6 +460,8 @@ def main() -> int:
         "generated_at": datetime.now(timezone.utc).replace(microsecond=0).isoformat(),
         "fund": build_fund(previous),
         "gold": build_gold(previous),
+        "freegames": build_freegames(previous),
+        "releases": build_releases(previous),
     }
 
     DATA_FILE.write_text(
