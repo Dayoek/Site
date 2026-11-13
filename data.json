@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-12T18:28:56+00:00",
+ "generated_at": "2026-11-13T17:56:38+00:00",
  "fund": {
   "isin": "IE00BFPM9N11",
   "name": "Vanguard Global Stock Index Fund",
@@ -7,8 +7,8 @@
   "abn_code": "95522",
   "currency": "EUR",
   "stale": false,
-  "nav": 463.24,
-  "as_of": "2026-11-11",
+  "nav": 463.06,
+  "as_of": "2026-11-12",
   "history": [
    {
     "date": "2026-07-06",
@@ -381,6 +381,10 @@
    {
     "date": "2026-11-11",
     "nav": 463.24
+   },
+   {
+    "date": "2026-11-12",
+    "nav": 463.06
    }
   ],
   "performance": {
@@ -393,16 +397,16 @@
    "3y": 19.0,
    "5y": 11.13
   },
-  "previous_nav": 455.9,
-  "change": 7.34,
-  "change_pct": 1.61
+  "previous_nav": 463.24,
+  "change": -0.18,
+  "change_pct": -0.04
  },
  "gold": {
   "stale": false,
-  "usd_per_oz": 3881.800049,
-  "eur_usd": 0.899865,
-  "eur_per_gram": 112.31,
-  "as_of": "2026-11-12",
+  "usd_per_oz": 3890.620117,
+  "eur_usd": 0.903491,
+  "eur_per_gram": 113.01,
+  "as_of": "2026-11-13",
   "history": [
    {
     "date": "2026-08-17",
@@ -659,6 +663,10 @@
    {
     "date": "2026-11-12",
     "eur_per_gram": 112.31
+   },
+   {
+    "date": "2026-11-13",
+    "eur_per_gram": 113.01
    }
   ]
  },
@@ -669,34 +677,34 @@
    "feed": "https://tweakers.net/feeds/nieuws.xml",
    "items": [
     {
-     "title": "Voormalig Nvidia-ceo Jensen Huang legt binnenkort verantwoording af voor Congres",
-     "link": "https://tweakers.net/nieuws/254478/voormalig-nvidia-ceo-jensen-huang-legt-binnenkort-verantwoording-af-voor-congres.html",
-     "published": "2026-11-12T17:50:07+00:00"
+     "title": "Google geeft bedrijven korter de tijd om bugs te fixen vanwege AI",
+     "link": "https://tweakers.net/nieuws/254520/google-geeft-bedrijven-korter-de-tijd-om-bugs-te-fixen-vanwege-ai.html",
+     "published": "2026-11-13T17:45:41+00:00"
     },
     {
-     "title": "Microsoft brengt gratis XBOX Cloud Gaming-versie met advertenties uit",
-     "link": "https://tweakers.net/nieuws/254476/microsoft-brengt-gratis-xbox-cloud-gaming-versie-met-advertenties-uit.html",
-     "published": "2026-11-12T17:25:56+00:00"
+     "title": "Humble Bundle zet vorm van 2fa weer terug na kritiek op 'gevibecode nieuwe UI'",
+     "link": "https://tweakers.net/nieuws/254516/humble-bundle-zet-vorm-van-2fa-weer-terug-na-kritiek-op-gevibecode-nieuwe-ui.html",
+     "published": "2026-11-13T16:36:35+00:00"
     },
     {
-     "title": "Chinese retailer JD.com voltooit overname MediaMarkt-eigenaar",
-     "link": "https://tweakers.net/nieuws/254472/chinese-retailer-jd-punt-com-voltooit-overname-mediamarkt-eigenaar.html",
-     "published": "2026-11-12T16:56:35+00:00"
+     "title": "Belgen krijgen langere garantie op gerepareerde producten",
+     "link": "https://tweakers.net/nieuws/254514/belgen-krijgen-langere-garantie-op-gerepareerde-producten.html",
+     "published": "2026-11-13T16:06:51+00:00"
     },
     {
-     "title": "Nederland gaat 4G- en 5G-banden ook na 2030 weer via veiling uitdelen",
-     "link": "https://tweakers.net/nieuws/254468/nederland-gaat-4g-en-5g-banden-ook-na-2030-weer-via-veiling-uitdelen.html",
-     "published": "2026-11-12T15:15:56+00:00"
+     "title": "Versio-klanten kunnen sites al weken niet beheren, nog geen oplossing in zicht",
+     "link": "https://tweakers.net/nieuws/254506/versio-klanten-kunnen-sites-al-weken-niet-beheren-nog-geen-oplossing-in-zicht.html",
+     "published": "2026-11-13T15:27:01+00:00"
     },
     {
-     "title": "Internetknooppunt NL-ix ziet recordverkeer van ruim 14Tbit/s door GTA VI",
-     "link": "https://tweakers.net/nieuws/254466/internetknooppunt-nl-ix-ziet-recordverkeer-van-ruim-14tbit-s-door-gta-vi.html",
-     "published": "2026-11-12T14:11:37+00:00"
+     "title": "Tien jaar na NotPetya is Maersk opnieuw slachtoffer van ransomewareaanval",
+     "link": "https://tweakers.net/nieuws/254512/tien-jaar-na-notpetya-is-maersk-opnieuw-slachtoffer-van-ransomewareaanval.html",
+     "published": "2026-11-13T15:02:57+00:00"
     },
     {
-     "title": "Jensen Huang treedt af als ceo van Nvidia na affaires",
-     "link": "https://tweakers.net/nieuws/254470/jensen-huang-treedt-af-als-ceo-van-nvidia-na-affaires.html",
-     "published": "2026-11-12T14:05:06+00:00"
+     "title": "'SpaceX kondigt mogelijk in december fusie met Tesla aan'",
+     "link": "https://tweakers.net/nieuws/254510/spacex-kondigt-mogelijk-in-december-fusie-met-tesla-aan.html",
+     "published": "2026-11-13T14:21:44+00:00"
     }
    ]
   },
@@ -706,34 +714,34 @@
    "feed": "https://feeds.nos.nl/nosnieuwsalgemeen",
    "items": [
     {
-     "title": "Maatschappelijke organisaties uiten onvrede over kabinetscrisis: 'Los dit samen op'",
-     "link": "https://nos.nl/l/2639206",
-     "published": "2026-11-12T18:24:46+00:00"
+     "title": "Nederlandse influencer opgepakt door Amerikaanse immigratiedienst ICE",
+     "link": "https://nos.nl/l/2639356",
+     "published": "2026-11-13T17:43:03+00:00"
     },
     {
-     "title": "'Narcis' van Judith Fanto wint NS Publieksprijs",
-     "link": "https://nos.nl/l/2639205",
-     "published": "2026-11-12T18:02:53+00:00"
+     "title": "Vier minderjarigen in Drunen aangehouden die zich voordeden als agenten",
+     "link": "https://nos.nl/l/2639355",
+     "published": "2026-11-13T17:36:38+00:00"
     },
     {
-     "title": "Belastingplan levert zware coalitiecrisis op: vier vragen en antwoorden",
-     "link": "https://nos.nl/l/2639201",
-     "published": "2026-11-12T17:29:39+00:00"
+     "title": "Wereldwijde storing Microsoft neemt af, exacte oorzaak nog altijd onbekend",
+     "link": "https://nos.nl/l/2639353",
+     "published": "2026-11-13T17:18:34+00:00"
     },
     {
-     "title": "Pas na de stemmingen wordt duidelijk hoe het verder gaat met belastingplan en kabinet",
-     "link": "https://nos.nl/l/2639200",
-     "published": "2026-11-12T17:20:28+00:00"
+     "title": "Na Trumps deal met Poetin nog geen druppel Russische diesel aangekomen in de VS",
+     "link": "https://nos.nl/l/2639350",
+     "published": "2026-11-13T17:05:05+00:00"
     },
     {
-     "title": "Marktbezoekers over politieke crisis: 'Het is elke keer hetzelfde liedje'",
-     "link": "https://nos.nl/l/2639194",
-     "published": "2026-11-12T16:29:51+00:00"
+     "title": "Kansen van Klaas Knot slinken, volgende week duidelijk wie ECB-president wordt",
+     "link": "https://nos.nl/l/2639342",
+     "published": "2026-11-13T16:43:05+00:00"
     },
     {
-     "title": "Vicepresident Indonesië stapt op na diplomaschandaal en oplopende spanningen",
-     "link": "https://nos.nl/l/2639193",
-     "published": "2026-11-12T15:57:48+00:00"
+     "title": "Curaçao wil samenwerken met omstreden regering El Salvador op gebied van justitie",
+     "link": "https://nos.nl/l/2639339",
+     "published": "2026-11-13T16:07:15+00:00"
     }
    ]
   },
@@ -743,34 +751,34 @@
    "feed": "https://www.rtlnieuws.nl/rss.xml",
    "items": [
     {
-     "title": "Bettina Holwerda verdwijnt stiekem van feestjes: 'Is relaxed'",
-     "link": "https://www.rtl.nl/boulevard/artikel/5664743/bettina-holwerda-verdwijnt-stiekem-van-feestjes",
-     "published": "2026-11-12T18:26:53+00:00"
+     "title": "RTL reageert op kritiek rond B&B Vol Liefde: 'Welzijn deelnemers staat voorop'",
+     "link": "https://www.rtl.nl/boulevard/artikel/5665031/rtl-reageert-kritiek-bb-vol-liefde",
+     "published": "2026-11-13T17:45:11+00:00"
     },
     {
-     "title": "Boek Narcis van Judith Fanto wint NS Publieksprijs",
-     "link": "https://www.rtl.nl/boulevard/artikel/5664823/boek-narcis-van-judith-fanto-wint-ns-publieksprijs",
-     "published": "2026-11-12T18:16:32+00:00"
+     "title": "Avril Lavigne voor het eerst moeder geworden",
+     "link": "https://www.rtl.nl/boulevard/artikel/5665037/avril-lavigne-voor-het-eerst-moeder-geworden",
+     "published": "2026-11-13T17:30:43+00:00"
     },
     {
-     "title": "Meer Nederlanders sporten, maar ook het aantal blessures neemt toe",
-     "link": "https://www.rtl.nl/nieuws/video/video/8f5b1cd1-e157-409a-83aa-e8b6c9e790bb/meer-nederlanders-sporten-maar-ook-het",
-     "published": "2026-11-12T18:07:42+00:00"
+     "title": "Britse politie start onderzoek naar David Walliams",
+     "link": "https://www.rtl.nl/boulevard/artikel/5665035/britse-politie-start-onderzoek-naar-david-walliams",
+     "published": "2026-11-13T17:15:31+00:00"
     },
     {
-     "title": "Vier doden bij crash militaire helikopter Turkije",
-     "link": "https://www.rtl.nl/nieuws/buitenland/artikel/5664812/crash-helikopter-turkije-4-inzittenden-overleden-malatya",
-     "published": "2026-11-12T17:48:03+00:00"
+     "title": "Machocultuur groot probleem in Latijns-Amerika: zo zit dat",
+     "link": "https://www.rtl.nl/nieuws/buitenland/artikel/5665022/machismo-cultuur-groot-probleem-latijns-amerika-zo-zit-het",
+     "published": "2026-11-13T17:11:10+00:00"
     },
     {
-     "title": "Vier meisjes overleden na eten sinaasappels in Oeganda",
-     "link": "https://www.rtl.nl/nieuws/buitenland/artikel/5664819/vier-meisjes-overleden-oeganda-sinaasappels-vergiftiging",
-     "published": "2026-11-12T17:47:16+00:00"
+     "title": "Grote gezinsdroom komt uit voor Johnny de Mol: derde kindje op komst",
+     "link": "https://www.rtl.nl/boulevard/artikel/5665034/johnny-de-mol-opnieuw-vader",
+     "published": "2026-11-13T16:59:46+00:00"
     },
     {
-     "title": "Acteur Joes Brauers krijgt bijzondere rol bij European Film Awards",
-     "link": "https://www.rtl.nl/boulevard/artikel/5664818/acteur-joes-brauers-kondigt-nominaties-european-film-awards-aan",
-     "published": "2026-11-12T17:33:15+00:00"
+     "title": "Illya uit B&B Vol Liefde reageert op uithaal Sylwia na ziekenhuisdrama: 'Ik was niet boos'",
+     "link": "https://www.rtl.nl/boulevard/artikel/5665025/illya-bb-vol-liefde-reageert-uithaal-sylwia-ziekenhuisdrama",
+     "published": "2026-11-13T16:41:05+00:00"
     }
    ]
   },
@@ -780,34 +788,34 @@
    "feed": "https://www.security.nl/rss/headlines.xml",
    "items": [
     {
-     "title": "AI-marktplaats Apify meldt inbraak op interne systemen door gestolen login",
-     "link": "https://www.security.nl/posting/961447/AI-marktplaats+Apify+meldt+inbraak+op+interne+systemen+door+gestolen+login?channel=rss",
-     "published": "2026-11-12T16:06:45+00:00"
+     "title": "AIVD-advies over spionage niet toegepast op dienstauto ministers",
+     "link": "https://www.security.nl/posting/961595/AIVD-advies+over+spionage+niet+toegepast+op+dienstauto+ministers?channel=rss",
+     "published": "2026-11-13T14:47:18+00:00"
     },
     {
-     "title": "Verzekeraars zien gebruik van AI bij plegen van verzekeringsfraude",
-     "link": "https://www.security.nl/posting/961442/Verzekeraars+zien+gebruik+van+AI+bij+plegen+van+verzekeringsfraude?channel=rss",
-     "published": "2026-11-12T15:33:00+00:00"
+     "title": "Brave verwijdert Meta-identifier van foto's op Instagram en Facebook",
+     "link": "https://www.security.nl/posting/961591/Brave+verwijdert+Meta-identifier+van+foto%27s+op+Instagram+en+Facebook?channel=rss",
+     "published": "2026-11-13T14:13:48+00:00"
     },
     {
-     "title": "Ivanti Endpoint Manager via kritiek SQL Injection-lek over te nemen",
-     "link": "https://www.security.nl/posting/961439/Ivanti+Endpoint+Manager+via+kritiek+SQL+Injection-lek+over+te+nemen?channel=rss",
-     "published": "2026-11-12T15:18:28+00:00"
+     "title": "Chipgigant TSMC meldt diefstal van personeelsgegevens",
+     "link": "https://www.security.nl/posting/961566/Chipgigant+TSMC+meldt+diefstal+van+personeelsgegevens?channel=rss",
+     "published": "2026-11-13T13:03:52+00:00"
     },
     {
-     "title": "Fraudehelpdesk waarschuwt voor phishingberichten uit naam van BENU",
-     "link": "https://www.security.nl/posting/961431/Fraudehelpdesk+waarschuwt+voor+phishingberichten+uit+naam+van+BENU?channel=rss",
-     "published": "2026-11-12T14:51:27+00:00"
+     "title": "Danfoss dicht beveiligingslekken waardoor koelsystemen zijn uit te schakelen",
+     "link": "https://www.security.nl/posting/961546/Danfoss+dicht+beveiligingslekken+waardoor+koelsystemen+zijn+uit+te+schakelen?channel=rss",
+     "published": "2026-11-13T12:32:26+00:00"
     },
     {
-     "title": "Politie haalt malware-servers offline, vindt miljoenen gestolen persoonsgegevens",
-     "link": "https://www.security.nl/posting/961420/Politie+haalt+malware-servers+offline%2C+vindt+miljoenen+gestolen+persoonsgegevens?channel=rss",
-     "published": "2026-11-12T13:50:15+00:00"
+     "title": "Check Point meldt misbruik van lek dat aanvaller root op gateway maakt",
+     "link": "https://www.security.nl/posting/961543/Check+Point+meldt+misbruik+van+lek+dat+aanvaller+root+op+gateway+maakt?channel=rss",
+     "published": "2026-11-13T11:40:04+00:00"
     },
     {
-     "title": "Minister: kwetsbaarheden zoals in PHP gaan we in toekomst nog vaker zien",
-     "link": "https://www.security.nl/posting/961416/Minister%3A+kwetsbaarheden+zoals+in+PHP+gaan+we+in+toekomst+nog+vaker+zien?channel=rss",
-     "published": "2026-11-12T13:28:58+00:00"
+     "title": "Minister: digitalisering maatschappij niet te stoppen, koelkast hoeft niet online",
+     "link": "https://www.security.nl/posting/961532/Minister%3A+digitalisering+maatschappij+niet+te+stoppen%2C+koelkast+hoeft+niet+online?channel=rss",
+     "published": "2026-11-13T11:10:15+00:00"
     }
    ]
   },
@@ -817,34 +825,34 @@
    "feed": null,
    "items": [
     {
-     "title": "Here’s how big Democrats won in the Senate in 2026",
-     "link": "https://www.cnn.com/2026/11/12/politics/democrats-senate-wins-midterms",
-     "published": "2026-11-12T00:00:00+00:00"
+     "title": "Bessent points finger at Lutnick over Nvidia chip exports as Trump advisers discuss possible Commerce Secretary ouster",
+     "link": "https://www.cnn.com/2026/11/13/politics/bessent-lutnick-nvidia-megaspeed-blame",
+     "published": "2026-11-13T00:00:00+00:00"
     },
     {
-     "title": "Israeli strike on Gaza hospital kills at least 6, including doctor and child, Palestinian officials say",
-     "link": "https://www.cnn.com/2026/11/12/middleeast/israeli-strike-gaza-hospital-kills-six-intl",
-     "published": "2026-11-12T00:00:00+00:00"
+     "title": "Iran targets US military site in Gulf for first time in two months as hopes for a deal fade",
+     "link": "https://www.cnn.com/2026/11/13/middleeast/iran-targets-us-military-site-in-gulf-first-time-in-two-months-intl",
+     "published": "2026-11-13T00:00:00+00:00"
     },
     {
-     "title": "Witkoff and Kushner to meet Zelensky after talks with Putin, as Ukraine says Starshield restricted again",
+     "title": "Wholesale inflation rose in October to highest annual rate in nearly four years",
+     "link": "https://www.cnn.com/2026/11/13/economy/us-wholesale-inflation-ppi-october",
+     "published": "2026-11-13T00:00:00+00:00"
+    },
+    {
+     "title": "Russia evasive after the US says Europe will join next Ukraine talks",
      "link": "https://www.cnn.com/2026/11/12/politics/ukraine-witkoff-kushner-putin-peace-talks-intl",
      "published": "2026-11-12T00:00:00+00:00"
     },
     {
-     "title": "Hegseth awards medal to soldier who reprimanded him and aides at Arlington Cemetery",
-     "link": "https://www.cnn.com/2026/11/12/politics/hegseth-awards-medal-soldier-reprimanded-him",
-     "published": "2026-11-12T00:00:00+00:00"
+     "title": "‘Hell, I was living it’: Joe Biden airs his frustration with Democratic critics in new memoir",
+     "link": "https://www.cnn.com/2026/11/13/politics/what-biden-says-in-his-new-book-about-2024-and-his-dealings-with-netanyahu-harris-and-pelosi",
+     "published": "2026-11-13T00:00:00+00:00"
     },
     {
-     "title": "Top Democrat will investigate whether RFK Jr. lied to Congress",
-     "link": "https://www.cnn.com/2026/11/12/politics/senate-democrate-rfk-investigation",
-     "published": "2026-11-12T00:00:00+00:00"
-    },
-    {
-     "title": "Why are there so many security incidents linked to US military in Britain?",
-     "link": "https://www.cnn.com/2026/11/12/uk/us-military-bases-uk-security-incidents-intl",
-     "published": "2026-11-12T00:00:00+00:00"
+     "title": "Moscow car explosion injures former aide to pro-Russian Ukrainian politician",
+     "link": "https://www.cnn.com/2026/11/13/europe/moscow-car-explosion-ukrainian-politician-injured-intl",
+     "published": "2026-11-13T00:00:00+00:00"
     }
    ],
    "note": "lite.cnn.com: CNN publishes no RSS since 2023"
@@ -855,34 +863,34 @@
    "feed": "https://www.cnnturk.com/feed/rss/all/news",
    "items": [
     {
-     "title": "Zelenski'den ABD'ye Donbas çıkışı: \"ABD bizim Donbas'tan çekilmemizi istiyor, olmaz\"",
-     "link": "https://www.cnnturk.com/video/dunya/zelenskiden-abdye-donbas-cikisi-abd-bizim-donbastan-cekilmemizi-istiyor-olmaz-3492570",
-     "published": "2026-11-12T20:58:48+00:00"
+     "title": "Ekrem İmamoğlu yeniden ifade verdi",
+     "link": "https://www.cnnturk.com/turkiye/ekrem-imamoglu-yeniden-ifade-verdi-3492989",
+     "published": "2026-11-13T20:25:32+00:00"
     },
     {
-     "title": "Netanyahu ve ordu arasında İran krizi mi? Katz'tan açıklama geldi",
-     "link": "https://www.cnnturk.com/dunya/netanyahu-ve-ordu-arasinda-iran-krizi-mi-katztan-aciklama-geldi-3492568",
-     "published": "2026-11-12T20:36:05+00:00"
+     "title": "Almanya'dan Trump'a Putin uyarısı! \"Lütfen sürpriz yapmayın\"",
+     "link": "https://www.cnnturk.com/dunya/almanyadan-trumpa-putin-uyarisi-lutfen-surpriz-yapmayin-3492987",
+     "published": "2026-11-13T20:21:18+00:00"
     },
     {
-     "title": "Türkiye Malatya şehitlerine ağlıyor! Siyasilerden taziye mesajları",
-     "link": "https://www.cnnturk.com/turkiye/turkiye-malatya-sehitlerine-agliyor-siyasilerden-taziye-mesajlari-3492566",
-     "published": "2026-11-12T20:25:31+00:00"
+     "title": "Kredi çekenler dikkat: 'Hayat sigortasında' bu detay bilinmiyor! İşte 1 milyon TL kredinin gizli maliyeti",
+     "link": "https://www.cnnturk.com/video/ekonomi/kredi-cekenler-dikkat-hayat-sigortasinda-bu-detay-bilinmiyor-iste-1-milyon-tl-kredinin-gizli-maliyeti-3492986",
+     "published": "2026-11-13T19:59:45+00:00"
     },
     {
-     "title": "Açık Lise (AÖL) 1. dönem sınavları ne zaman? Açık öğretim lisesi sınav giriş belgesi yayımlandı mı?",
-     "link": "https://www.cnnturk.com/egitim/acik-lise-aol-1-donem-sinavlari-ne-zaman-acik-ogretim-lisesi-sinav-giris-belgesi-yayimlandi-mi-3492567",
-     "published": "2026-11-12T20:16:49+00:00"
+     "title": "HABAŞ'tan Aliağa'daki iş kazasına ilişkin açıklama! \"Yetkili makamlarla tam işbirliği içindeyiz\"",
+     "link": "https://www.cnnturk.com/turkiye/habastan-aliagadaki-is-kazasina-iliskin-aciklama-yetkili-makamlarla-tam-isbirligi-icindeyiz-3492985",
+     "published": "2026-11-13T19:43:12+00:00"
     },
     {
-     "title": "Yolsuzluk suçundan dokunulmazlıklar kaldırılır mı?",
-     "link": "https://www.cnnturk.com/video/turkiye/yolsuzluk-sucundan-dokunulmazliklar-kaldirilir-mi-3492564",
-     "published": "2026-11-12T20:13:56+00:00"
+     "title": "İRAN FÜZE ÜRETİMİNE HIZ VERDİ! ‘’Amaç ABD'yi yenmek değil direnişi sürdürmek’’",
+     "link": "https://www.cnnturk.com/video/dunya/iran-fuze-uretimine-hiz-verdi-amac-abdyi-yenmek-degil-direnisi-surdurmek-3492983",
+     "published": "2026-11-13T19:37:09+00:00"
     },
     {
-     "title": "TÜRKİYE - BELÇİKA MAÇI CANLI İZLE | Milli Maç ATV Canlı Yayın Ekranı Şifresiz, HD: Türkiye Belçika Maçı Nereden İzlenir, Şifreli Mi, Şifresiz Mi?",
-     "link": "https://www.cnnturk.com/spor/futbol/turkiye-belcika-maci-canli-izle-milli-mac-atv-canli-yayin-ekrani-sifresiz-hd-turkiye-belcika-maci-nereden-izlenir-sifreli-mi-3492426",
-     "published": "2026-11-12T20:03:44+00:00"
+     "title": "Microsoft uygulamaları çöktü: E-posta, mesajlaşma ve yapay zeka uygulamaları aksadı",
+     "link": "https://www.cnnturk.com/video/dunya/microsoft-uygulamalari-coktu-e-posta-mesajlasma-ve-yapay-zeka-uygulamalari-aksadi-3492978",
+     "published": "2026-11-13T19:12:49+00:00"
     }
    ]
   }
