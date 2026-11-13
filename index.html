@@ -323,6 +323,7 @@
           <span class="chip" id="gold-usd">—</span>
           <span class="chip" id="gold-oz">—</span>
           <span class="chip" id="gold-fx">—</span>
+          <span class="chip" id="gold-fx-try">—</span>
         </div>
       </article>
 
@@ -494,6 +495,7 @@
 
       const ozUsd = Number(spot.price);
       const eurUsd = Number(fx.rates && fx.rates.EUR);
+      const eurTry = fx.rates && fx.rates.TRY ? Number(fx.rates.TRY) / Number(fx.rates.EUR) : 0;
       if (!ozUsd || !eurUsd) throw new Error("shape");
 
       const gramUsd = ozUsd / TROY_OUNCE_G;
@@ -504,6 +506,7 @@
       $("gold-usd").innerHTML = "USD/g <b>" + usd.format(gramUsd) + "</b>";
       $("gold-oz").innerHTML = "USD/oz <b>" + usd.format(ozUsd) + "</b>";
       $("gold-fx").innerHTML = "EUR/USD <b>" + num4.format(eurUsd) + "</b>";
+      $("gold-fx-try").innerHTML = "EUR/TRY <b>" + num2.format(eurTry) + "</b>";
       badge.textContent = "live";
       badge.className = "badge live";
     } catch (err) {
