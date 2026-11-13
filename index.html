@@ -272,6 +272,42 @@
 
   .empty { color: var(--dim); font-size: .82rem; padding: .5rem 0; }
 
+  .subhead {
+    color: var(--dim);
+    font-size: .68rem;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    margin: .7rem 0 .2rem;
+  }
+
+  ul.glist { list-style: none; margin: 0; padding: 0; display: grid; gap: .1rem; }
+
+  ul.glist a {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: .6rem;
+    padding: .4rem .5rem .4rem .55rem;
+    border-left: 2px solid transparent;
+    border-radius: 0 6px 6px 0;
+    color: #cdd6e2;
+    text-decoration: none;
+    font-size: .86rem;
+    transition: background .13s, border-color .13s, color .13s;
+  }
+
+  ul.glist a:hover,
+  ul.glist a:focus-visible {
+    background: rgba(255, 255, 255, .04);
+    border-left-color: var(--gold);
+    color: #fff;
+    outline: none;
+  }
+
+  ul.glist .meta { color: var(--dim); font-size: .7rem; white-space: nowrap; font-variant-numeric: tabular-nums; }
+
+  ul.glist.dim a { color: var(--dim); }
+
   /* ---------- footer ---------- */
 
   footer {
@@ -356,6 +392,34 @@
           <li><a href="https://www.cnn.com" target="_blank" rel="noopener noreferrer">CNN</a></li>
           <li><a href="https://www.cnnturk.com" target="_blank" rel="noopener noreferrer">CNN Türk</a></li>
         </ul>
+      </article>
+    </section>
+
+    <section class="news" aria-label="Games">
+      <article class="card">
+        <div class="card-head">
+          <span class="dot"></span>
+          <h2>Gratis games</h2>
+          <a href="https://store.epicgames.com/nl/free-games" target="_blank" rel="noopener noreferrer">epic ↗</a>
+        </div>
+        <ul class="glist" id="freegames-current"></ul>
+        <p class="subhead">binnenkort</p>
+        <ul class="glist dim" id="freegames-upcoming"></ul>
+        <div class="chips">
+          <span class="chip"><a href="https://store.epicgames.com/nl/free-games" target="_blank" rel="noopener noreferrer">Epic</a></span>
+          <span class="chip"><a href="https://store.steampowered.com" target="_blank" rel="noopener noreferrer">Steam</a></span>
+          <span class="chip"><a href="https://www.gog.com" target="_blank" rel="noopener noreferrer">GOG</a></span>
+          <span class="chip"><a href="https://gaming.amazon.com" target="_blank" rel="noopener noreferrer">Prime</a></span>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-head">
+          <span class="dot"></span>
+          <h2>Releases</h2>
+          <a href="https://rawg.io" target="_blank" rel="noopener noreferrer">rawg ↗</a>
+        </div>
+        <ul class="glist" id="releases"></ul>
       </article>
     </section>
   </main>
@@ -572,6 +636,69 @@
     );
   }
 
+  /* ---------- games ---------- */
+
+  function gameItem(href, name, metaText) {
+    const li = document.createElement("li");
+    const a = document.createElement("a");
+    a.href = href || "#";
+    a.target = "_blank";
+    a.rel = "noopener noreferrer";
+    const span = document.createElement("span");
+    span.textContent = name;
+    a.append(span);
+    if (metaText) {
+      const meta = document.createElement("span");
+      meta.className = "meta";
+      meta.textContent = metaText;
+      a.append(meta);
+    }
+    li.append(a);
+    return li;
+  }
+
+  function renderFreegames(fg) {
+    const cur = $(("freegames-current"));
+    const soon = $(("freegames-upcoming"));
+    cur.innerHTML = "";
+    soon.innerHTML = "";
+
+    const current = (fg && fg.current) || [];
+    const upcoming = (fg && fg.upcoming) || [];
+
+    if (!current.length) {
+      const li = document.createElement("li");
+      li.innerHTML = '<p class="empty">geen gratis games nu</p>';
+      cur.append(li);
+    }
+    for (const g of current) {
+      cur.append(gameItem(g.url, g.title, g.end ? "t/m " + shortDate(g.end) : ""));
+    }
+    for (const g of upcoming) {
+      soon.append(gameItem(g.url, g.title, g.start ? "vanaf " + shortDate(g.start) : ""));
+    }
+    if (!upcoming.length) {
+      const li = document.createElement("li");
+      li.innerHTML = '<p class="empty">—</p>';
+      soon.append(li);
+    }
+  }
+
+  function renderReleases(rel) {
+    const host = $("releases");
+    host.innerHTML = "";
+    const games = (rel && rel.games) || [];
+    if (!games.length) {
+      const li = document.createElement("li");
+      li.innerHTML = '<p class="empty">geen release data</p>';
+      host.append(li);
+      return;
+    }
+    for (const g of games) {
+      host.append(gameItem(g.url, g.name, g.released ? shortDate(g.released) : ""));
+    }
+  }
+
   /* ---------- boot ---------- */
 
   async function main() {
@@ -582,6 +709,8 @@
       data = await res.json();
 
       loadFund(data.fund);
+      renderFreegames(data.freegames);
+      renderReleases(data.releases);
 
       const stamp = data.generated_at ? new Date(data.generated_at) : null;
       $("updated").textContent = stamp
