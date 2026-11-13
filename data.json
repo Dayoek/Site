@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-13T17:56:38+00:00",
+ "generated_at": "2026-11-13T20:03:55+00:00",
  "fund": {
   "isin": "IE00BFPM9N11",
   "name": "Vanguard Global Stock Index Fund",
@@ -403,9 +403,9 @@
  },
  "gold": {
   "stale": false,
-  "usd_per_oz": 3890.620117,
+  "usd_per_oz": 3877.52002,
   "eur_usd": 0.903491,
-  "eur_per_gram": 113.01,
+  "eur_per_gram": 112.63,
   "as_of": "2026-11-13",
   "history": [
    {
@@ -666,233 +666,68 @@
    },
    {
     "date": "2026-11-13",
-    "eur_per_gram": 113.01
+    "eur_per_gram": 112.63
    }
   ]
  },
- "news": {
-  "tweakers": {
-   "label": "Tweakers",
-   "site": "https://tweakers.net",
-   "feed": "https://tweakers.net/feeds/nieuws.xml",
-   "items": [
-    {
-     "title": "Google geeft bedrijven korter de tijd om bugs te fixen vanwege AI",
-     "link": "https://tweakers.net/nieuws/254520/google-geeft-bedrijven-korter-de-tijd-om-bugs-te-fixen-vanwege-ai.html",
-     "published": "2026-11-13T17:45:41+00:00"
-    },
-    {
-     "title": "Humble Bundle zet vorm van 2fa weer terug na kritiek op 'gevibecode nieuwe UI'",
-     "link": "https://tweakers.net/nieuws/254516/humble-bundle-zet-vorm-van-2fa-weer-terug-na-kritiek-op-gevibecode-nieuwe-ui.html",
-     "published": "2026-11-13T16:36:35+00:00"
-    },
-    {
-     "title": "Belgen krijgen langere garantie op gerepareerde producten",
-     "link": "https://tweakers.net/nieuws/254514/belgen-krijgen-langere-garantie-op-gerepareerde-producten.html",
-     "published": "2026-11-13T16:06:51+00:00"
-    },
-    {
-     "title": "Versio-klanten kunnen sites al weken niet beheren, nog geen oplossing in zicht",
-     "link": "https://tweakers.net/nieuws/254506/versio-klanten-kunnen-sites-al-weken-niet-beheren-nog-geen-oplossing-in-zicht.html",
-     "published": "2026-11-13T15:27:01+00:00"
-    },
-    {
-     "title": "Tien jaar na NotPetya is Maersk opnieuw slachtoffer van ransomewareaanval",
-     "link": "https://tweakers.net/nieuws/254512/tien-jaar-na-notpetya-is-maersk-opnieuw-slachtoffer-van-ransomewareaanval.html",
-     "published": "2026-11-13T15:02:57+00:00"
-    },
-    {
-     "title": "'SpaceX kondigt mogelijk in december fusie met Tesla aan'",
-     "link": "https://tweakers.net/nieuws/254510/spacex-kondigt-mogelijk-in-december-fusie-met-tesla-aan.html",
-     "published": "2026-11-13T14:21:44+00:00"
-    }
-   ]
-  },
-  "nos": {
-   "label": "NOS",
-   "site": "https://nos.nl",
-   "feed": "https://feeds.nos.nl/nosnieuwsalgemeen",
-   "items": [
-    {
-     "title": "Nederlandse influencer opgepakt door Amerikaanse immigratiedienst ICE",
-     "link": "https://nos.nl/l/2639356",
-     "published": "2026-11-13T17:43:03+00:00"
-    },
-    {
-     "title": "Vier minderjarigen in Drunen aangehouden die zich voordeden als agenten",
-     "link": "https://nos.nl/l/2639355",
-     "published": "2026-11-13T17:36:38+00:00"
-    },
-    {
-     "title": "Wereldwijde storing Microsoft neemt af, exacte oorzaak nog altijd onbekend",
-     "link": "https://nos.nl/l/2639353",
-     "published": "2026-11-13T17:18:34+00:00"
-    },
-    {
-     "title": "Na Trumps deal met Poetin nog geen druppel Russische diesel aangekomen in de VS",
-     "link": "https://nos.nl/l/2639350",
-     "published": "2026-11-13T17:05:05+00:00"
-    },
-    {
-     "title": "Kansen van Klaas Knot slinken, volgende week duidelijk wie ECB-president wordt",
-     "link": "https://nos.nl/l/2639342",
-     "published": "2026-11-13T16:43:05+00:00"
-    },
-    {
-     "title": "Curaçao wil samenwerken met omstreden regering El Salvador op gebied van justitie",
-     "link": "https://nos.nl/l/2639339",
-     "published": "2026-11-13T16:07:15+00:00"
-    }
-   ]
-  },
-  "rtl": {
-   "label": "RTL Nieuws",
-   "site": "https://www.rtlnieuws.nl",
-   "feed": "https://www.rtlnieuws.nl/rss.xml",
-   "items": [
-    {
-     "title": "RTL reageert op kritiek rond B&B Vol Liefde: 'Welzijn deelnemers staat voorop'",
-     "link": "https://www.rtl.nl/boulevard/artikel/5665031/rtl-reageert-kritiek-bb-vol-liefde",
-     "published": "2026-11-13T17:45:11+00:00"
-    },
-    {
-     "title": "Avril Lavigne voor het eerst moeder geworden",
-     "link": "https://www.rtl.nl/boulevard/artikel/5665037/avril-lavigne-voor-het-eerst-moeder-geworden",
-     "published": "2026-11-13T17:30:43+00:00"
-    },
-    {
-     "title": "Britse politie start onderzoek naar David Walliams",
-     "link": "https://www.rtl.nl/boulevard/artikel/5665035/britse-politie-start-onderzoek-naar-david-walliams",
-     "published": "2026-11-13T17:15:31+00:00"
-    },
-    {
-     "title": "Machocultuur groot probleem in Latijns-Amerika: zo zit dat",
-     "link": "https://www.rtl.nl/nieuws/buitenland/artikel/5665022/machismo-cultuur-groot-probleem-latijns-amerika-zo-zit-het",
-     "published": "2026-11-13T17:11:10+00:00"
-    },
-    {
-     "title": "Grote gezinsdroom komt uit voor Johnny de Mol: derde kindje op komst",
-     "link": "https://www.rtl.nl/boulevard/artikel/5665034/johnny-de-mol-opnieuw-vader",
-     "published": "2026-11-13T16:59:46+00:00"
-    },
-    {
-     "title": "Illya uit B&B Vol Liefde reageert op uithaal Sylwia na ziekenhuisdrama: 'Ik was niet boos'",
-     "link": "https://www.rtl.nl/boulevard/artikel/5665025/illya-bb-vol-liefde-reageert-uithaal-sylwia-ziekenhuisdrama",
-     "published": "2026-11-13T16:41:05+00:00"
-    }
-   ]
-  },
-  "security": {
-   "label": "Security.NL",
-   "site": "https://www.security.nl",
-   "feed": "https://www.security.nl/rss/headlines.xml",
-   "items": [
-    {
-     "title": "AIVD-advies over spionage niet toegepast op dienstauto ministers",
-     "link": "https://www.security.nl/posting/961595/AIVD-advies+over+spionage+niet+toegepast+op+dienstauto+ministers?channel=rss",
-     "published": "2026-11-13T14:47:18+00:00"
-    },
-    {
-     "title": "Brave verwijdert Meta-identifier van foto's op Instagram en Facebook",
-     "link": "https://www.security.nl/posting/961591/Brave+verwijdert+Meta-identifier+van+foto%27s+op+Instagram+en+Facebook?channel=rss",
-     "published": "2026-11-13T14:13:48+00:00"
-    },
-    {
-     "title": "Chipgigant TSMC meldt diefstal van personeelsgegevens",
-     "link": "https://www.security.nl/posting/961566/Chipgigant+TSMC+meldt+diefstal+van+personeelsgegevens?channel=rss",
-     "published": "2026-11-13T13:03:52+00:00"
-    },
-    {
-     "title": "Danfoss dicht beveiligingslekken waardoor koelsystemen zijn uit te schakelen",
-     "link": "https://www.security.nl/posting/961546/Danfoss+dicht+beveiligingslekken+waardoor+koelsystemen+zijn+uit+te+schakelen?channel=rss",
-     "published": "2026-11-13T12:32:26+00:00"
-    },
-    {
-     "title": "Check Point meldt misbruik van lek dat aanvaller root op gateway maakt",
-     "link": "https://www.security.nl/posting/961543/Check+Point+meldt+misbruik+van+lek+dat+aanvaller+root+op+gateway+maakt?channel=rss",
-     "published": "2026-11-13T11:40:04+00:00"
-    },
-    {
-     "title": "Minister: digitalisering maatschappij niet te stoppen, koelkast hoeft niet online",
-     "link": "https://www.security.nl/posting/961532/Minister%3A+digitalisering+maatschappij+niet+te+stoppen%2C+koelkast+hoeft+niet+online?channel=rss",
-     "published": "2026-11-13T11:10:15+00:00"
-    }
-   ]
-  },
-  "cnn": {
-   "label": "CNN",
-   "site": "https://www.cnn.com",
-   "feed": null,
-   "items": [
-    {
-     "title": "Bessent points finger at Lutnick over Nvidia chip exports as Trump advisers discuss possible Commerce Secretary ouster",
-     "link": "https://www.cnn.com/2026/11/13/politics/bessent-lutnick-nvidia-megaspeed-blame",
-     "published": "2026-11-13T00:00:00+00:00"
-    },
-    {
-     "title": "Iran targets US military site in Gulf for first time in two months as hopes for a deal fade",
-     "link": "https://www.cnn.com/2026/11/13/middleeast/iran-targets-us-military-site-in-gulf-first-time-in-two-months-intl",
-     "published": "2026-11-13T00:00:00+00:00"
-    },
-    {
-     "title": "Wholesale inflation rose in October to highest annual rate in nearly four years",
-     "link": "https://www.cnn.com/2026/11/13/economy/us-wholesale-inflation-ppi-october",
-     "published": "2026-11-13T00:00:00+00:00"
-    },
-    {
-     "title": "Russia evasive after the US says Europe will join next Ukraine talks",
-     "link": "https://www.cnn.com/2026/11/12/politics/ukraine-witkoff-kushner-putin-peace-talks-intl",
-     "published": "2026-11-12T00:00:00+00:00"
-    },
-    {
-     "title": "‘Hell, I was living it’: Joe Biden airs his frustration with Democratic critics in new memoir",
-     "link": "https://www.cnn.com/2026/11/13/politics/what-biden-says-in-his-new-book-about-2024-and-his-dealings-with-netanyahu-harris-and-pelosi",
-     "published": "2026-11-13T00:00:00+00:00"
-    },
-    {
-     "title": "Moscow car explosion injures former aide to pro-Russian Ukrainian politician",
-     "link": "https://www.cnn.com/2026/11/13/europe/moscow-car-explosion-ukrainian-politician-injured-intl",
-     "published": "2026-11-13T00:00:00+00:00"
-    }
-   ],
-   "note": "lite.cnn.com: CNN publishes no RSS since 2023"
-  },
-  "cnnturk": {
-   "label": "CNN Türk",
-   "site": "https://www.cnnturk.com",
-   "feed": "https://www.cnnturk.com/feed/rss/all/news",
-   "items": [
-    {
-     "title": "Ekrem İmamoğlu yeniden ifade verdi",
-     "link": "https://www.cnnturk.com/turkiye/ekrem-imamoglu-yeniden-ifade-verdi-3492989",
-     "published": "2026-11-13T20:25:32+00:00"
-    },
-    {
-     "title": "Almanya'dan Trump'a Putin uyarısı! \"Lütfen sürpriz yapmayın\"",
-     "link": "https://www.cnnturk.com/dunya/almanyadan-trumpa-putin-uyarisi-lutfen-surpriz-yapmayin-3492987",
-     "published": "2026-11-13T20:21:18+00:00"
-    },
-    {
-     "title": "Kredi çekenler dikkat: 'Hayat sigortasında' bu detay bilinmiyor! İşte 1 milyon TL kredinin gizli maliyeti",
-     "link": "https://www.cnnturk.com/video/ekonomi/kredi-cekenler-dikkat-hayat-sigortasinda-bu-detay-bilinmiyor-iste-1-milyon-tl-kredinin-gizli-maliyeti-3492986",
-     "published": "2026-11-13T19:59:45+00:00"
-    },
-    {
-     "title": "HABAŞ'tan Aliağa'daki iş kazasına ilişkin açıklama! \"Yetkili makamlarla tam işbirliği içindeyiz\"",
-     "link": "https://www.cnnturk.com/turkiye/habastan-aliagadaki-is-kazasina-iliskin-aciklama-yetkili-makamlarla-tam-isbirligi-icindeyiz-3492985",
-     "published": "2026-11-13T19:43:12+00:00"
-    },
-    {
-     "title": "İRAN FÜZE ÜRETİMİNE HIZ VERDİ! ‘’Amaç ABD'yi yenmek değil direnişi sürdürmek’’",
-     "link": "https://www.cnnturk.com/video/dunya/iran-fuze-uretimine-hiz-verdi-amac-abdyi-yenmek-degil-direnisi-surdurmek-3492983",
-     "published": "2026-11-13T19:37:09+00:00"
-    },
-    {
-     "title": "Microsoft uygulamaları çöktü: E-posta, mesajlaşma ve yapay zeka uygulamaları aksadı",
-     "link": "https://www.cnnturk.com/video/dunya/microsoft-uygulamalari-coktu-e-posta-mesajlasma-ve-yapay-zeka-uygulamalari-aksadi-3492978",
-     "published": "2026-11-13T19:12:49+00:00"
-    }
-   ]
-  }
+ "freegames": {
+  "current": [
+   {
+    "title": "Knightica",
+    "start": "2026-11-12",
+    "end": "2026-11-19",
+    "url": "https://store.epicgames.com/nl/p/knightica-3be45c"
+   }
+  ],
+  "upcoming": [
+   {
+    "title": "Alien: Isolation",
+    "start": "2026-11-19",
+    "end": "2026-11-26",
+    "url": "https://store.epicgames.com/nl/p/alien-isolation"
+   },
+   {
+    "title": "Mark of the Deep",
+    "start": "2026-11-19",
+    "end": "2026-11-26",
+    "url": "https://store.epicgames.com/nl/p/mark-of-the-deep-f7dc08"
+   }
+  ]
+ },
+ "releases": {
+  "games": [
+   {
+    "name": "Grand Theft Auto VI",
+    "released": "2026-11-19",
+    "url": "https://rawg.io/games/grand-theft-aito-vi"
+   },
+   {
+    "name": "Path of Exile 2",
+    "released": "2026-12-11",
+    "url": "https://rawg.io/games/path-of-exile-2"
+   },
+   {
+    "name": "Rayman Legends Retold",
+    "released": "2026-12-03",
+    "url": "https://rawg.io/games/rayman-legends-retold"
+   },
+   {
+    "name": "Beautiful Light",
+    "released": "2026-12-01",
+    "url": "https://rawg.io/games/beautiful-light"
+   },
+   {
+    "name": "Cronos: Lazarus",
+    "released": "2026-12-03",
+    "url": "https://rawg.io/games/cronos-lazarus"
+   },
+   {
+    "name": "Guns of Eschaton",
+    "released": "2026-12-08",
+    "url": "https://rawg.io/games/guns-of-eschaton"
+   }
+  ],
+  "from": "2026-11-13",
+  "to": "2026-12-13"
  }
 }
