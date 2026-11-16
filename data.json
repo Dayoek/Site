@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-13T20:03:55+00:00",
+ "generated_at": "2026-11-16T20:37:00+00:00",
  "fund": {
   "isin": "IE00BFPM9N11",
   "name": "Vanguard Global Stock Index Fund",
@@ -7,8 +7,8 @@
   "abn_code": "95522",
   "currency": "EUR",
   "stale": false,
-  "nav": 463.06,
-  "as_of": "2026-11-12",
+  "nav": 463.0,
+  "as_of": "2026-11-13",
   "history": [
    {
     "date": "2026-07-06",
@@ -385,28 +385,32 @@
    {
     "date": "2026-11-12",
     "nav": 463.06
+   },
+   {
+    "date": "2026-11-13",
+    "nav": 463.0
    }
   ],
   "performance": {
-   "ytd": 17.94,
-   "1w": 0.53,
-   "1m": -0.61,
-   "3m": 1.99,
-   "6m": 9.4,
-   "1y": 17.29,
-   "3y": 19.0,
-   "5y": 11.13
+   "ytd": 17.88,
+   "1w": 3.5,
+   "1m": -0.73,
+   "3m": 1.17,
+   "6m": 8.4,
+   "1y": 18.93,
+   "3y": 18.99,
+   "5y": 10.91
   },
-  "previous_nav": 463.24,
-  "change": -0.18,
-  "change_pct": -0.04
+  "previous_nav": 463.06,
+  "change": -0.06,
+  "change_pct": -0.01
  },
  "gold": {
   "stale": false,
-  "usd_per_oz": 3877.52002,
-  "eur_usd": 0.903491,
-  "eur_per_gram": 112.63,
-  "as_of": "2026-11-13",
+  "usd_per_oz": 3859.570068,
+  "eur_usd": 0.906623,
+  "eur_per_gram": 112.5,
+  "as_of": "2026-11-16",
   "history": [
    {
     "date": "2026-08-17",
@@ -667,6 +671,10 @@
    {
     "date": "2026-11-13",
     "eur_per_gram": 112.63
+   },
+   {
+    "date": "2026-11-16",
+    "eur_per_gram": 112.5
    }
   ]
  },
@@ -680,12 +688,6 @@
    }
   ],
   "upcoming": [
-   {
-    "title": "Alien: Isolation",
-    "start": "2026-11-19",
-    "end": "2026-11-26",
-    "url": "https://store.epicgames.com/nl/p/alien-isolation"
-   },
    {
     "title": "Mark of the Deep",
     "start": "2026-11-19",
@@ -727,7 +729,7 @@
     "url": "https://rawg.io/games/guns-of-eschaton"
    }
   ],
-  "from": "2026-11-13",
-  "to": "2026-12-13"
+  "from": "2026-11-16",
+  "to": "2026-12-16"
  }
 }
