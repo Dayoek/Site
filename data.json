@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-18T18:56:16+00:00",
+ "generated_at": "2026-11-19T19:04:59+00:00",
  "fund": {
   "isin": "IE00BFPM9N11",
   "name": "Vanguard Global Stock Index Fund",
@@ -7,8 +7,8 @@
   "abn_code": "95522",
   "currency": "EUR",
   "stale": false,
-  "nav": 451.07,
-  "as_of": "2026-11-17",
+  "nav": 450.35,
+  "as_of": "2026-11-18",
   "history": [
    {
     "date": "2026-07-06",
@@ -397,28 +397,32 @@
    {
     "date": "2026-11-17",
     "nav": 451.07
+   },
+   {
+    "date": "2026-11-18",
+    "nav": 450.35
    }
   ],
   "performance": {
-   "ytd": 14.84,
-   "1w": -1.06,
-   "1m": -1.65,
-   "3m": -0.58,
-   "6m": 5.67,
-   "1y": 16.83,
-   "3y": 17.58,
+   "ytd": 14.66,
+   "1w": -2.78,
+   "1m": -1.81,
+   "3m": -0.05,
+   "6m": 5.62,
+   "1y": 17.79,
+   "3y": 17.52,
    "5y": 10.09
   },
-  "previous_nav": 456.39,
-  "change": -5.32,
-  "change_pct": -1.17
+  "previous_nav": 451.07,
+  "change": -0.72,
+  "change_pct": -0.16
  },
  "gold": {
   "stale": false,
-  "usd_per_oz": 3740.75,
-  "eur_usd": 0.909215,
-  "eur_per_gram": 109.35,
-  "as_of": "2026-11-18",
+  "usd_per_oz": 3680.149902,
+  "eur_usd": 0.911253,
+  "eur_per_gram": 107.82,
+  "as_of": "2026-11-19",
   "history": [
    {
     "date": "2026-08-17",
@@ -691,16 +695,20 @@
    {
     "date": "2026-11-18",
     "eur_per_gram": 109.35
+   },
+   {
+    "date": "2026-11-19",
+    "eur_per_gram": 107.82
    }
   ]
  },
  "freegames": {
   "current": [
    {
-    "title": "Knightica",
-    "start": "2026-11-12",
-    "end": "2026-11-19",
-    "url": "https://store.epicgames.com/nl/p/knightica-3be45c"
+    "title": "Mark of the Deep",
+    "start": "2026-11-19",
+    "end": "2026-11-26",
+    "url": "https://store.epicgames.com/nl/p/mark-of-the-deep-f7dc08"
    }
   ],
   "upcoming": [
@@ -711,10 +719,10 @@
     "url": "https://store.epicgames.com/nl/p/firestone-online-idle-rpg-bfd04b"
    },
    {
-    "title": "Mark of the Deep",
-    "start": "2026-11-19",
-    "end": "2026-11-26",
-    "url": "https://store.epicgames.com/nl/p/mark-of-the-deep-f7dc08"
+    "title": "Bread and Fred",
+    "start": "2026-11-26",
+    "end": "2026-12-03",
+    "url": "https://store.epicgames.com/nl/p/bread-and-fred-1db362"
    }
   ]
  },
@@ -751,7 +759,7 @@
     "url": "https://rawg.io/games/guns-of-eschaton"
    }
   ],
-  "from": "2026-11-18",
-  "to": "2026-12-18"
+  "from": "2026-11-19",
+  "to": "2026-12-19"
  }
 }
