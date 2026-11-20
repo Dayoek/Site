@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-19T19:04:59+00:00",
+ "generated_at": "2026-11-20T18:41:54+00:00",
  "fund": {
   "isin": "IE00BFPM9N11",
   "name": "Vanguard Global Stock Index Fund",
@@ -7,8 +7,8 @@
   "abn_code": "95522",
   "currency": "EUR",
   "stale": false,
-  "nav": 450.35,
-  "as_of": "2026-11-18",
+  "nav": 442.37,
+  "as_of": "2026-11-19",
   "history": [
    {
     "date": "2026-07-06",
@@ -401,28 +401,32 @@
    {
     "date": "2026-11-18",
     "nav": 450.35
+   },
+   {
+    "date": "2026-11-19",
+    "nav": 442.37
    }
   ],
   "performance": {
-   "ytd": 14.66,
-   "1w": -2.78,
-   "1m": -1.81,
-   "3m": -0.05,
-   "6m": 5.62,
-   "1y": 17.79,
-   "3y": 17.52,
-   "5y": 10.09
+   "ytd": 12.63,
+   "1w": -4.47,
+   "1m": -3.97,
+   "3m": -1.23,
+   "6m": 3.83,
+   "1y": 15.17,
+   "3y": 16.82,
+   "5y": 9.68
   },
-  "previous_nav": 451.07,
-  "change": -0.72,
-  "change_pct": -0.16
+  "previous_nav": 450.35,
+  "change": -7.98,
+  "change_pct": -1.77
  },
  "gold": {
   "stale": false,
-  "usd_per_oz": 3680.149902,
-  "eur_usd": 0.911253,
-  "eur_per_gram": 107.82,
-  "as_of": "2026-11-19",
+  "usd_per_oz": 3515.050049,
+  "eur_usd": 0.910749,
+  "eur_per_gram": 102.93,
+  "as_of": "2026-11-20",
   "history": [
    {
     "date": "2026-08-17",
@@ -699,6 +703,10 @@
    {
     "date": "2026-11-19",
     "eur_per_gram": 107.82
+   },
+   {
+    "date": "2026-11-20",
+    "eur_per_gram": 102.93
    }
   ]
  },
@@ -729,11 +737,6 @@
  "releases": {
   "games": [
    {
-    "name": "Grand Theft Auto VI",
-    "released": "2026-11-19",
-    "url": "https://rawg.io/games/grand-theft-aito-vi"
-   },
-   {
     "name": "Path of Exile 2",
     "released": "2026-12-11",
     "url": "https://rawg.io/games/path-of-exile-2"
@@ -757,9 +760,14 @@
     "name": "Guns of Eschaton",
     "released": "2026-12-08",
     "url": "https://rawg.io/games/guns-of-eschaton"
+   },
+   {
+    "name": "They Come in Fives",
+    "released": "2026-12-16",
+    "url": "https://rawg.io/games/they-come-in-fives"
    }
   ],
-  "from": "2026-11-19",
-  "to": "2026-12-19"
+  "from": "2026-11-20",
+  "to": "2026-12-20"
  }
 }
