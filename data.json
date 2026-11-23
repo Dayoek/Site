@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-20T18:41:54+00:00",
+ "generated_at": "2026-11-23T22:07:58+00:00",
  "fund": {
   "isin": "IE00BFPM9N11",
   "name": "Vanguard Global Stock Index Fund",
@@ -7,8 +7,8 @@
   "abn_code": "95522",
   "currency": "EUR",
   "stale": false,
-  "nav": 442.37,
-  "as_of": "2026-11-19",
+  "nav": 427.47,
+  "as_of": "2026-11-20",
   "history": [
    {
     "date": "2026-07-06",
@@ -405,28 +405,32 @@
    {
     "date": "2026-11-19",
     "nav": 442.37
+   },
+   {
+    "date": "2026-11-20",
+    "nav": 427.47
    }
   ],
   "performance": {
-   "ytd": 12.63,
-   "1w": -4.47,
-   "1m": -3.97,
-   "3m": -1.23,
-   "6m": 3.83,
-   "1y": 15.17,
-   "3y": 16.82,
-   "5y": 9.68
+   "ytd": 8.83,
+   "1w": -7.68,
+   "1m": -7.14,
+   "3m": -3.85,
+   "6m": -0.51,
+   "1y": 12.32,
+   "3y": 15.42,
+   "5y": 8.93
   },
-  "previous_nav": 450.35,
-  "change": -7.98,
-  "change_pct": -1.77
+  "previous_nav": 442.37,
+  "change": -14.9,
+  "change_pct": -3.37
  },
  "gold": {
   "stale": false,
-  "usd_per_oz": 3515.050049,
-  "eur_usd": 0.910749,
-  "eur_per_gram": 102.93,
-  "as_of": "2026-11-20",
+  "usd_per_oz": 3634.25,
+  "eur_usd": 0.911134,
+  "eur_per_gram": 106.46,
+  "as_of": "2026-11-23",
   "history": [
    {
     "date": "2026-08-17",
@@ -707,6 +711,10 @@
    {
     "date": "2026-11-20",
     "eur_per_gram": 102.93
+   },
+   {
+    "date": "2026-11-23",
+    "eur_per_gram": 106.46
    }
   ]
  },
@@ -767,7 +775,7 @@
     "url": "https://rawg.io/games/they-come-in-fives"
    }
   ],
-  "from": "2026-11-20",
-  "to": "2026-12-20"
+  "from": "2026-11-23",
+  "to": "2026-12-23"
  }
 }
