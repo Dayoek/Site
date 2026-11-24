@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-23T22:07:58+00:00",
+ "generated_at": "2026-11-24T20:44:23+00:00",
  "fund": {
   "isin": "IE00BFPM9N11",
   "name": "Vanguard Global Stock Index Fund",
@@ -7,8 +7,8 @@
   "abn_code": "95522",
   "currency": "EUR",
   "stale": false,
-  "nav": 427.47,
-  "as_of": "2026-11-20",
+  "nav": 446.47,
+  "as_of": "2026-11-23",
   "history": [
    {
     "date": "2026-07-06",
@@ -409,28 +409,32 @@
    {
     "date": "2026-11-20",
     "nav": 427.47
+   },
+   {
+    "date": "2026-11-23",
+    "nav": 446.47
    }
   ],
   "performance": {
-   "ytd": 8.83,
-   "1w": -7.68,
-   "1m": -7.14,
-   "3m": -3.85,
-   "6m": -0.51,
-   "1y": 12.32,
-   "3y": 15.42,
-   "5y": 8.93
+   "ytd": 13.67,
+   "1w": -2.17,
+   "1m": -2.43,
+   "3m": -0.12,
+   "6m": 2.96,
+   "1y": 16.35,
+   "3y": 16.95,
+   "5y": 9.93
   },
-  "previous_nav": 442.37,
-  "change": -14.9,
-  "change_pct": -3.37
+  "previous_nav": 427.47,
+  "change": 19.0,
+  "change_pct": 4.44
  },
  "gold": {
   "stale": false,
-  "usd_per_oz": 3634.25,
-  "eur_usd": 0.911134,
-  "eur_per_gram": 106.46,
-  "as_of": "2026-11-23",
+  "usd_per_oz": 3549.949951,
+  "eur_usd": 0.915641,
+  "eur_per_gram": 104.51,
+  "as_of": "2026-11-24",
   "history": [
    {
     "date": "2026-08-17",
@@ -715,6 +719,10 @@
    {
     "date": "2026-11-23",
     "eur_per_gram": 106.46
+   },
+   {
+    "date": "2026-11-24",
+    "eur_per_gram": 104.51
    }
   ]
  },
@@ -755,14 +763,14 @@
     "url": "https://rawg.io/games/rayman-legends-retold"
    },
    {
-    "name": "Beautiful Light",
-    "released": "2026-12-01",
-    "url": "https://rawg.io/games/beautiful-light"
-   },
-   {
     "name": "Cronos: Lazarus",
     "released": "2026-12-03",
     "url": "https://rawg.io/games/cronos-lazarus"
+   },
+   {
+    "name": "Beautiful Light",
+    "released": "2026-12-01",
+    "url": "https://rawg.io/games/beautiful-light"
    },
    {
     "name": "Guns of Eschaton",
@@ -775,7 +783,7 @@
     "url": "https://rawg.io/games/they-come-in-fives"
    }
   ],
-  "from": "2026-11-23",
-  "to": "2026-12-23"
+  "from": "2026-11-24",
+  "to": "2026-12-24"
  }
 }
