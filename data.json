@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-25T20:01:31+00:00",
+ "generated_at": "2026-11-26T19:44:06+00:00",
  "fund": {
   "isin": "IE00BFPM9N11",
   "name": "Vanguard Global Stock Index Fund",
@@ -7,8 +7,8 @@
   "abn_code": "95522",
   "currency": "EUR",
   "stale": false,
-  "nav": 442.7,
-  "as_of": "2026-11-24",
+  "nav": 441.9,
+  "as_of": "2026-11-25",
   "history": [
    {
     "date": "2026-07-06",
@@ -417,28 +417,32 @@
    {
     "date": "2026-11-24",
     "nav": 442.7
+   },
+   {
+    "date": "2026-11-25",
+    "nav": 441.9
    }
   ],
   "performance": {
-   "ytd": 12.71,
-   "1w": -1.86,
-   "1m": -3.25,
-   "3m": -0.79,
-   "6m": 2.09,
-   "1y": 14.2,
-   "3y": 16.64,
-   "5y": 9.61
+   "ytd": 12.51,
+   "1w": -1.88,
+   "1m": -3.42,
+   "3m": -1.3,
+   "6m": 1.92,
+   "1y": 13.3,
+   "3y": 16.57,
+   "5y": 9.57
   },
-  "previous_nav": 446.47,
-  "change": -3.77,
-  "change_pct": -0.84
+  "previous_nav": 442.7,
+  "change": -0.8,
+  "change_pct": -0.18
  },
  "gold": {
   "stale": false,
-  "usd_per_oz": 3548.149902,
-  "eur_usd": 0.91245,
-  "eur_per_gram": 104.09,
-  "as_of": "2026-11-25",
+  "usd_per_oz": 3566.199951,
+  "eur_usd": 0.9121,
+  "eur_per_gram": 104.58,
+  "as_of": "2026-11-26",
   "history": [
    {
     "date": "2026-08-17",
@@ -731,19 +735,15 @@
    {
     "date": "2026-11-25",
     "eur_per_gram": 104.09
+   },
+   {
+    "date": "2026-11-26",
+    "eur_per_gram": 104.58
    }
   ]
  },
  "freegames": {
   "current": [
-   {
-    "title": "Mark of the Deep",
-    "start": "2026-11-19",
-    "end": "2026-11-26",
-    "url": "https://store.epicgames.com/nl/p/mark-of-the-deep-f7dc08"
-   }
-  ],
-  "upcoming": [
    {
     "title": "Firestone – Idle Clicker Online RPG",
     "start": "2026-11-26",
@@ -755,6 +755,14 @@
     "start": "2026-11-26",
     "end": "2026-12-03",
     "url": "https://store.epicgames.com/nl/p/bread-and-fred-1db362"
+   }
+  ],
+  "upcoming": [
+   {
+    "title": "Strange Antiquities",
+    "start": "2026-12-03",
+    "end": "2026-12-10",
+    "url": "https://store.epicgames.com/nl/p/strange-antiquities-e37660"
    }
   ]
  },
@@ -791,7 +799,7 @@
     "url": "https://rawg.io/games/they-come-in-fives"
    }
   ],
-  "from": "2026-11-25",
-  "to": "2026-12-25"
+  "from": "2026-11-26",
+  "to": "2026-12-26"
  }
 }
